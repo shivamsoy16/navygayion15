@@ -1,8 +1,13 @@
 package com.su.navygayion15.fragment;
 
+import android.app.Activity;
+import android.os.Build;
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.ViewModel;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +21,13 @@ import com.su.navygayion15.R;
  * create an instance of this fragment.
  */
 public class ListFragment extends Fragment {
+
+    /*@Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        getActivity().getActionBar().setTitle("List");
+
+    }*/
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -54,6 +66,8 @@ public class ListFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
+
+
         }
     }
 
@@ -62,5 +76,8 @@ public class ListFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_list, container, false);
-    }
-}
+
+            }
+        }
+
+
