@@ -8,7 +8,7 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
-public class tabActivity extends AppCompatActivity implements View.OnClickListener {
+public class tabActivity extends AppCompatActivity /*implements View.OnClickListener*/ {
 
     int i = 10; // input no of row
     String[] details = new String[5];
@@ -30,7 +30,7 @@ public class tabActivity extends AppCompatActivity implements View.OnClickListen
         details[REGISTRATION] = "Registration No.";
         details[ADMISSION] = "Admission No. ";
 //        TableLayout tl = new TableLayout(MainScreen.this);
-        TableLayout tl = findViewById(R.id.table);
+        /*TableLayout tl = findViewById(R.id.table);
         for (int k = 0; k < i; k++) {
 
             TableRow tr = new TableRow(tabActivity.this);
@@ -52,10 +52,11 @@ public class tabActivity extends AppCompatActivity implements View.OnClickListen
 
         }
 
-        //setContentView(tl);
+        //setContentView(tl);*/
+
     }
 
-    @Override
+/*    @Override
     public void onClick(View v) {
         // TODO Auto-generated method stub
 
@@ -66,5 +67,5 @@ public class tabActivity extends AppCompatActivity implements View.OnClickListen
         String ids = details[clicked_id];
         String loc = details[clicked_id];
 
-    }
+    }*/
 }

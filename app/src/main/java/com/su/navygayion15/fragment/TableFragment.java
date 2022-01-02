@@ -112,13 +112,13 @@ public class TableFragment extends Fragment {
         detailVals[ADMISSION] = "1345645";
         String[][] ele = Elements.getSubjects();
 
-        TableLayout tl = (TableLayout)view.findViewById(R.id.detailsTable);
+        /*TableLayout tl = (TableLayout)view.findViewById(R.id.detailsTable);
         for (int j = 0; j<3; j++)
             for (int i = 0; i < 3; i++)
             {
                 TableRow tr = new TableRow(getContext());
 
-                /*ImageView iv = new ImageView(getContext());
+                *//*ImageView iv = new ImageView(getContext());
                 tr.setClickable(true);
                 tr.setOnClickListener(this);
                 try {
@@ -135,7 +135,7 @@ public class TableFragment extends Fragment {
                     e.printStackTrace();
                 }
                 Drawable d = Drawable.createFromStream(content , "src");
-                iv.setImageDrawable(d);*/
+                iv.setImageDrawable(d);*//*
 
     //            tr.addView(iv,new TableLayout.LayoutParams(150,150));
                 TextView tv2 = new TextView(getContext());
@@ -154,7 +154,7 @@ public class TableFragment extends Fragment {
 
                 tl.addView(tr);
             }
-
+*/
         /*for ( int j = 0; j < 3; j++) {
             for (int i = 0; i < 3; i++) {
                 // Make TR

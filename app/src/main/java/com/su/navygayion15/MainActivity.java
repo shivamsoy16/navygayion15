@@ -34,13 +34,13 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.m_table:
                         Toast.makeText(MainActivity.this, "Periodic Table", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(MainActivity.this, tabActivity.class);
-                        startActivity(intent);
-                        /*Fragment fragment1 = new TableFragment();
+                        /*Intent intent = new Intent(MainActivity.this, tabActivity.class);
+                        startActivity(intent);*/
+                        Fragment fragment1 = new TableFragment();
                         androidx.fragment.app.FragmentManager fm1 = getSupportFragmentManager();
                         androidx.fragment.app.FragmentTransaction transaction1 = fm1.beginTransaction();
                         transaction1.replace(R.id.fragment_container, fragment1);
-                        transaction1.commit();*/
+                        transaction1.commit();
                         changetitle("Periodic Table");
                         return true;
                     case R.id.m_list:
