@@ -92,14 +92,14 @@ public class TableFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_table, container, false);
 
-//        TextView titolo = (TextView)view.findViewById(R.id.textView1);
-//        titolo.setText(yourTextValue);
-        if (container == null)
+        /*  {   TextView titolo = (TextView)view.findViewById(R.id.textView1);
+         titolo.setText(yourTextValue);
+        /*if (container == null)
         {
             return null;
-        }
+        }*/
 
-        details[NAME] = "Name";
+        /*details[NAME] = "Name";
         details[BRANCH] = "Branch";
         details[EMAIL] = "Email";
         details[REGISTRATION] = "Registration No.";
@@ -110,7 +110,7 @@ public class TableFragment extends Fragment {
         detailVals[EMAIL] = "some_email@email.com";
         detailVals[REGISTRATION] = "11101212";
         detailVals[ADMISSION] = "1345645";
-        String[][] ele = Elements.getSubjects();
+        String[][] ele = Elements.getSubjects();*/
 
         /*TableLayout tl = (TableLayout)view.findViewById(R.id.detailsTable);
         for (int j = 0; j<3; j++)
@@ -118,7 +118,8 @@ public class TableFragment extends Fragment {
             {
                 TableRow tr = new TableRow(getContext());
 
-                *//*ImageView iv = new ImageView(getContext());
+                */
+        /*ImageView iv = new ImageView(getContext());
                 tr.setClickable(true);
                 tr.setOnClickListener(this);
                 try {
@@ -183,6 +184,7 @@ public class TableFragment extends Fragment {
             }
         }*/
         return view;
+
 
     }
 }

@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.ListFragment">
+    tools:context=".fragment.ListFragment"
+    android:id="@+id/list_fragment">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -16,341 +17,390 @@
                 <TableRow
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:background="#AAD9FF">
+                    android:background="#AAD9FF"
+                    android:textAlignment="center">
                     <TextView
-                        android:text="Atomic No"
-                        android:textSize="24dp"
-                        android:paddingRight="24dp"/>
+                        android:text="At.No"
+                        android:textSize="26dp"
+                        android:paddingRight="30dp"/>
 
                     <TextView
                         android:text="Symbol"
-                        android:textSize="24dp"
+                        android:textSize="26dp"
                         android:paddingRight="38dp"/>
 
                     <TextView
-                        android:paddingRight="68dp"
+                        android:paddingRight="96dp"
                         android:text="Element"
-                        android:textSize="24dp" />
+                        android:textSize="26dp" />
                 </TableRow>
+
                 <TableRow
-                    android:layout_height="match_parent"
+                    android:id="@+id/but_1"
                     android:layout_width="match_parent"
-                    android:id="@+id/but_1">
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:onClick="onClick">
+
                     <TextView
                         android:text="1"
-                        android:textSize="24dp"
-                        android:textAlignment="center"/>
+                        android:textAlignment="center"
+                        android:textSize="30dp" />
+
                     <TextView
                         android:text="H"
-                        android:textSize="24dp"
-                        android:textAlignment="center"/>
+                        android:textAlignment="center"
+                        android:textSize="30dp" />
+
                     <TextView
                         android:text="Hydrogen"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp" />
                 </TableRow>
+
                 <TableRow
-                    android:layout_height="match_parent"
+                    android:id="@+id/but_2"
                     android:layout_width="match_parent"
-                    android:id="@+id/but_2">
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:onClick="onClick">
+
                     <TextView
                         android:text="2"
-                        android:textSize="24dp"
-                        android:textAlignment="center"/>
+                        android:textAlignment="center"
+                        android:textSize="30dp" />
+
                     <TextView
                         android:text="He"
-                        android:textSize="24dp"
-                        android:textAlignment="center"/>
+                        android:textAlignment="center"
+                        android:textSize="30dp" />
+
                     <TextView
                         android:text="Helium"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp" />
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:id="@+id/but_3">
+                    android:id="@+id/but_3"
+                    android:clickable="true"
+                    android:onClick="onClick">
                     <TextView
                         android:text="3"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Le"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Lithium"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:id="@+id/but_4">
+                    android:id="@+id/but_4"
+                    android:clickable="true"
+                    android:onClick="onClick">
                     <TextView
                         android:text="4"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Be"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Beryllium"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:id="@+id/but_5">
+                    android:id="@+id/but_5"
+                    android:clickable="true"
+                    android:onClick="onClick">
                     <TextView
                         android:text="5"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="B"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Boron"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:id="@+id/but_6">
+                    android:id="@+id/but_6"
+                    android:clickable="true"
+                    android:onClick="onClick">
                     <TextView
                         android:text="6"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="C"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Carbon"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:id="@+id/but_7">
+                    android:id="@+id/but_7"
+                    android:clickable="true"
+                    android:onClick="onClick">
                     <TextView
                         android:text="7"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="N"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Nitrogen"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:id="@+id/but_8">
+                    android:id="@+id/but_8"
+                    android:clickable="true"
+                    android:onClick="onClick">
                     <TextView
                         android:text="8"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="O"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Oxygen"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:id="@+id/but_9">
+                    android:id="@+id/but_9"
+                    android:clickable="true"
+                    android:onClick="onClick">
                     <TextView
                         android:text="9"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="F"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Fluorine"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:id="@+id/but_10">
+                    android:id="@+id/but_10"
+                    android:clickable="true"
+                    android:onClick="onClick">
                     <TextView
                         android:text="10"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Ne"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Neon"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:id="@+id/but_11">
+                    android:id="@+id/but_11"
+                    android:clickable="true"
+                    android:onClick="onClick">
                     <TextView
                         android:text="11"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Na"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Sodium"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:id="@+id/but_12">
+                    android:id="@+id/but_12"
+                    android:clickable="true"
+                    android:onClick="onClick">
                     <TextView
                         android:text="12"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Mg"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Magnesium"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:id="@+id/but_13">
+                    android:id="@+id/but_13"
+                    android:clickable="true"
+                    android:onClick="onClick">
                     <TextView
                         android:text="13"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Al"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Aluminium"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:id="@+id/but_14">
+                    android:id="@+id/but_14"
+                    android:clickable="true"
+                    android:onClick="onClick">
                 <TextView
                     android:text="14"
-                    android:textSize="24dp"
+                    android:textSize="30dp"
                     android:textAlignment="center"/>
                 <TextView
                     android:text="Si"
-                    android:textSize="24dp"
+                    android:textSize="30dp"
                     android:textAlignment="center"/>
                 <TextView
                     android:text="Silicon"
-                    android:textSize="24dp"/>
+                    android:textSize="30dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:id="@+id/but_15">
+                    android:id="@+id/but_15"
+                    android:clickable="true"
+                    android:onClick="onClick">
                     <TextView
                         android:text="15"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="P"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Phosphorus"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:id="@+id/but_16">
+                    android:id="@+id/but_16"
+                    android:clickable="true"
+                    android:onClick="onClick">
                     <TextView
                         android:text="16"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="S"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Sulfur"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:id="@+id/but_17">
+                    android:id="@+id/but_17"
+                    android:clickable="true"
+                    android:onClick="onClick">
                     <TextView
                         android:text="17"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Cl"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Chlorine"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:id="@+id/but_18">
+                    android:id="@+id/but_18"
+                    android:clickable="true"
+                    android:onClick="onClick">
                     <TextView
                         android:text="18"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Ar"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Argon"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:id="@+id/but_19">
+                    android:id="@+id/but_19"
+                    android:clickable="true"
+                    android:onClick="onClick">
                     <TextView
                         android:text="19"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="K"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Potassium"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:id="@+id/but_20">
+                    android:id="@+id/but_20"
+                    android:clickable="true"
+                    android:onClick="onClick">
                     <TextView
                         android:text="20"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Ca"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Calcium"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
@@ -358,15 +408,15 @@
                     android:id="@+id/but_21">
                     <TextView
                         android:text="21"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Sc"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Scandium"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
@@ -374,15 +424,15 @@
                     android:id="@+id/but_22">
                     <TextView
                         android:text="22"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Ti"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Titanium"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
@@ -390,111 +440,15 @@
                     android:id="@+id/but_23">
                     <TextView
                         android:text="23"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="V"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Vanadium"
-                        android:textSize="24dp"/>
-                </TableRow>
-                <TableRow
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent"
-                    android:id="@+id/but_24">
-                    <TextView
-                        android:text="24"
-                        android:textSize="24dp"
-                        android:textAlignment="center"/>
-                    <TextView
-                        android:text="Cr"
-                        android:textSize="24dp"
-                        android:textAlignment="center"/>
-                    <TextView
-                        android:text="Chromium"
-                        android:textSize="24dp"/>
-                </TableRow>
-                <TableRow
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent"
-                    android:id="@+id/but_25">
-                    <TextView
-                        android:text="25"
-                        android:textSize="24dp"
-                        android:textAlignment="center"/>
-                    <TextView
-                        android:text="Mn"
-                        android:textSize="24dp"
-                        android:textAlignment="center"/>
-                    <TextView
-                        android:text="Manganese"
-                        android:textSize="24dp"/>
-                </TableRow>
-                <TableRow
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent"
-                    android:id="@+id/but_26">
-                    <TextView
-                        android:text="26"
-                        android:textSize="24dp"
-                        android:textAlignment="center"/>
-                    <TextView
-                        android:text="Fe"
-                        android:textSize="24dp"
-                        android:textAlignment="center"/>
-                    <TextView
-                        android:text="Iron"
-                        android:textSize="24dp"/>
-                </TableRow>
-                <TableRow
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent"
-                    android:id="@+id/but_27">
-                    <TextView
-                        android:text="27"
-                        android:textSize="24dp"
-                        android:textAlignment="center"/>
-                    <TextView
-                        android:text="Co"
-                        android:textSize="24dp"
-                        android:textAlignment="center"/>
-                    <TextView
-                        android:text="Cobalt"
-                        android:textSize="24dp"/>
-                </TableRow>
-                <TableRow
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent"
-                    android:id="@+id/but_28">
-                    <TextView
-                        android:text="28"
-                        android:textSize="24dp"
-                        android:textAlignment="center"/>
-                    <TextView
-                        android:text="Ni"
-                        android:textSize="24dp"
-                        android:textAlignment="center"/>
-                    <TextView
-                        android:text="Nickel"
-                        android:textSize="24dp"/>
-                </TableRow>
-                <TableRow
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent"
-                    android:id="@+id/but_29">
-                    <TextView
-                        android:text="29"
-                        android:textSize="24dp"
-                        android:textAlignment="center"/>
-                    <TextView
-                        android:text="Cu"
-                        android:textSize="24dp"
-                        android:textAlignment="center"/>
-                    <TextView
-                        android:text="Copper"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_height="match_parent"
@@ -502,15 +456,111 @@
                     android:id="@+id/but_30">
                     <TextView
                         android:text="30"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:text="Cr"
+                        android:textSize="30dp"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:text="Chromium"
+                        android:textSize="30dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/but_25">
+                    <TextView
+                        android:text="25"
+                        android:textSize="30dp"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:text="Mn"
+                        android:textSize="30dp"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:text="Manganese"
+                        android:textSize="30dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/but_26">
+                    <TextView
+                        android:text="26"
+                        android:textSize="30dp"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:text="Fe"
+                        android:textSize="30dp"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:text="Iron"
+                        android:textSize="30dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/but_27">
+                    <TextView
+                        android:text="27"
+                        android:textSize="30dp"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:text="Co"
+                        android:textSize="30dp"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:text="Cobalt"
+                        android:textSize="30dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/but_28">
+                    <TextView
+                        android:text="28"
+                        android:textSize="30dp"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:text="Ni"
+                        android:textSize="30dp"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:text="Nickel"
+                        android:textSize="30dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/but_29">
+                    <TextView
+                        android:text="29"
+                        android:textSize="30dp"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:text="Cu"
+                        android:textSize="30dp"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:text="Copper"
+                        android:textSize="30dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/but_30">
+                    <TextView
+                        android:text="30"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Zn"
-                        android:textSize="24dp"
+                        android:textSize="30dp"
                         android:textAlignment="center"/>
                     <TextView
                         android:text="Zinc"
-                        android:textSize="24dp"/>
+                        android:textSize="30dp"/>
                 </TableRow>
             </TableLayout>
         </HorizontalScrollView>
