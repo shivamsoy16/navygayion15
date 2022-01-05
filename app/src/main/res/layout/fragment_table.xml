@@ -16,8 +16,8 @@
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="1017dp"
-                android:layout_height="38dp"
+                android:layout_width="1370dp"
+                android:layout_height="32dp"
                 android:layout_marginTop="88dp"
                 android:text="H"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -27,443 +27,909 @@
 
             <Button
                 android:id="@+id/butt_1"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="12dp"
                 android:text="H"
+                android:textSize="24dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button2" />
 
             <Button
                 android:id="@+id/butt_3"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="16dp"
-                android:text="H"
+                android:text="Li"
+                android:textSize="24dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/butt_1" />
 
             <Button
                 android:id="@+id/butt_4"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Be"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_3"
                 app:layout_constraintTop_toBottomOf="@+id/butt_1" />
 
             <Button
                 android:id="@+id/butt_11"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="16dp"
-                android:text="H"
+                android:text="Na"
+                android:textSize="24dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/butt_3" />
 
             <Button
                 android:id="@+id/butt_12"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Mg"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_11"
                 app:layout_constraintTop_toBottomOf="@+id/butt_4" />
 
             <Button
                 android:id="@+id/butt_19"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="16dp"
-                android:text="H"
+                android:text="K"
+                android:textSize="24dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/butt_11" />
 
             <Button
                 android:id="@+id/butt_20"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Ca"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_19"
                 app:layout_constraintTop_toBottomOf="@+id/butt_12" />
 
             <Button
                 android:id="@+id/butt_21"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Sc"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_20"
                 app:layout_constraintTop_toBottomOf="@+id/butt_12" />
 
             <Button
                 android:id="@+id/butt_22"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Ti"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_21"
                 app:layout_constraintTop_toBottomOf="@+id/butt_12" />
 
             <Button
                 android:id="@+id/butt_23"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="V"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_22"
                 app:layout_constraintTop_toBottomOf="@+id/butt_12" />
 
             <Button
                 android:id="@+id/butt_24"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Cr"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_23"
                 app:layout_constraintTop_toBottomOf="@+id/butt_12" />
 
             <Button
                 android:id="@+id/butt_25"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Mn"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_24"
                 app:layout_constraintTop_toBottomOf="@+id/butt_12" />
 
             <Button
                 android:id="@+id/butt_26"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Fe"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_25"
                 app:layout_constraintTop_toBottomOf="@+id/butt_12" />
 
             <Button
                 android:id="@+id/butt_27"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Co"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_26"
                 app:layout_constraintTop_toBottomOf="@+id/butt_12" />
 
             <Button
                 android:id="@+id/butt_28"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Ni"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_27"
                 app:layout_constraintTop_toBottomOf="@+id/butt_12" />
 
             <Button
                 android:id="@+id/butt_29"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Cu"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_28"
                 app:layout_constraintTop_toBottomOf="@+id/butt_12" />
 
             <Button
-                android:id="@+id/butt_43"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:id="@+id/butt_30"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Zn"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_29"
+                app:layout_constraintTop_toBottomOf="@+id/butt_12" />
+
+            <Button
+                android:id="@+id/butt_5"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="88dp"
+                android:text="B"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_30"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+            <Button
+                android:id="@+id/butt_6"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="88dp"
+                android:text="C"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_5"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+            <Button
+                android:id="@+id/butt_7"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="88dp"
+                android:text="N"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_6"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+            <Button
+                android:id="@+id/butt_9"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="88dp"
+                android:text="F"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_8"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+            <Button
+                android:id="@+id/butt_10"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Ne"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_9"
+                app:layout_constraintTop_toBottomOf="@+id/butt_2" />
+
+            <Button
+                android:id="@+id/butt_2"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="He"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_9"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+            <Button
+                android:id="@+id/butt_8"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="88dp"
+                android:text="O"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_7"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+            <Button
+                android:id="@+id/butt_13"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Al"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_30"
+                app:layout_constraintTop_toBottomOf="@+id/butt_5" />
+
+            <Button
+                android:id="@+id/butt_14"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Si"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_13"
+                app:layout_constraintTop_toBottomOf="@+id/butt_6" />
+
+            <Button
+                android:id="@+id/butt_15"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="P"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_14"
+                app:layout_constraintTop_toBottomOf="@+id/butt_7" />
+
+            <Button
+                android:id="@+id/butt_16"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="S"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_15"
+                app:layout_constraintTop_toBottomOf="@+id/butt_8" />
+
+            <Button
+                android:id="@+id/butt_17"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Cl"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_16"
+                app:layout_constraintTop_toBottomOf="@+id/butt_8" />
+
+            <Button
+                android:id="@+id/butt_18"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Ar"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_17"
+                app:layout_constraintTop_toBottomOf="@+id/butt_10" />
+
+            <Button
+                android:id="@+id/butt_31"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Ga"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_30"
+                app:layout_constraintTop_toBottomOf="@+id/butt_13" />
+
+            <Button
+                android:id="@+id/butt_32"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Ge"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_31"
+                app:layout_constraintTop_toBottomOf="@+id/butt_14" />
+
+            <Button
+                android:id="@+id/butt_33"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="As"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_32"
+                app:layout_constraintTop_toBottomOf="@+id/butt_15" />
+
+            <Button
+                android:id="@+id/butt_34"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Se"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_33"
+                app:layout_constraintTop_toBottomOf="@+id/butt_16" />
+
+            <Button
+                android:id="@+id/butt_35"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Br"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_34"
+                app:layout_constraintTop_toBottomOf="@+id/butt_17" />
+
+            <Button
+                android:id="@+id/butt_36"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Kr"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_35"
+                app:layout_constraintTop_toBottomOf="@+id/butt_18" />
+
+            <Button
+                android:id="@+id/butt_43"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Tc"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_42"
                 app:layout_constraintTop_toBottomOf="@+id/butt_25" />
 
             <Button
                 android:id="@+id/butt_44"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Ru"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_43"
                 app:layout_constraintTop_toBottomOf="@+id/butt_26" />
 
             <Button
                 android:id="@+id/butt_45"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Rh"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_44"
                 app:layout_constraintTop_toBottomOf="@+id/butt_27" />
 
             <Button
                 android:id="@+id/butt_46"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Pd"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_45"
                 app:layout_constraintTop_toBottomOf="@+id/butt_28" />
 
             <Button
                 android:id="@+id/butt_47"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Ag"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_46"
                 app:layout_constraintTop_toBottomOf="@+id/butt_29" />
 
             <Button
-                android:id="@+id/butt_77"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:id="@+id/butt_48"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Cs"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_47"
+                app:layout_constraintTop_toBottomOf="@+id/butt_30" />
+
+            <Button
+                android:id="@+id/butt_49"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="In"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_48"
+                app:layout_constraintTop_toBottomOf="@+id/butt_31" />
+
+            <Button
+                android:id="@+id/butt_50"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Sn"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_49"
+                app:layout_constraintTop_toBottomOf="@+id/butt_32" />
+
+            <Button
+                android:id="@+id/butt_51"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Sb"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_50"
+                app:layout_constraintTop_toBottomOf="@+id/butt_33" />
+
+            <Button
+                android:id="@+id/butt_52"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Te"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_51"
+                app:layout_constraintTop_toBottomOf="@+id/butt_34" />
+
+            <Button
+                android:id="@+id/butt_53"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="I"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_52"
+                app:layout_constraintTop_toBottomOf="@+id/butt_35" />
+
+            <Button
+                android:id="@+id/butt_54"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Xe"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_53"
+                app:layout_constraintTop_toBottomOf="@+id/butt_36" />
+
+            <Button
+                android:id="@+id/butt_77"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Ir"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_76"
                 app:layout_constraintTop_toBottomOf="@+id/butt_45" />
 
             <Button
                 android:id="@+id/butt_78"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Pt"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_77"
                 app:layout_constraintTop_toBottomOf="@+id/butt_46" />
 
             <Button
                 android:id="@+id/butt_79"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Au"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_78"
                 app:layout_constraintTop_toBottomOf="@+id/butt_47" />
 
             <Button
-                android:id="@+id/butt_109"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:id="@+id/butt_80"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Hg"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_79"
+                app:layout_constraintTop_toBottomOf="@+id/butt_48" />
+
+            <Button
+                android:id="@+id/butt_81"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Ti"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_80"
+                app:layout_constraintTop_toBottomOf="@+id/butt_49" />
+
+            <Button
+                android:id="@+id/butt_82"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Pb"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_81"
+                app:layout_constraintTop_toBottomOf="@+id/butt_50" />
+
+            <Button
+                android:id="@+id/butt_83"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Bi"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_82"
+                app:layout_constraintTop_toBottomOf="@+id/butt_51" />
+
+            <Button
+                android:id="@+id/butt_84"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Po"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_83"
+                app:layout_constraintTop_toBottomOf="@+id/butt_52" />
+
+            <Button
+                android:id="@+id/butt_85"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="At"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_84"
+                app:layout_constraintTop_toBottomOf="@+id/butt_53" />
+
+            <Button
+                android:id="@+id/butt_86"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Rn"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_85"
+                app:layout_constraintTop_toBottomOf="@+id/butt_54" />
+
+            <Button
+                android:id="@+id/butt_109"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Mt"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_108"
                 app:layout_constraintTop_toBottomOf="@+id/butt_77" />
 
             <Button
                 android:id="@+id/butt_110"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Ds"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_109"
                 app:layout_constraintTop_toBottomOf="@+id/butt_78" />
 
             <Button
                 android:id="@+id/butt_111"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Rg"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_110"
                 app:layout_constraintTop_toBottomOf="@+id/butt_79" />
 
             <Button
-                android:id="@+id/butt_75"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:id="@+id/butt_112"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:layout_marginTop="4dp"
+                android:text="Cn"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_111"
+                app:layout_constraintTop_toBottomOf="@+id/butt_80" />
+
+            <Button
+                android:id="@+id/butt_113"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Nh"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_112"
+                app:layout_constraintTop_toBottomOf="@+id/butt_81" />
+
+            <Button
+                android:id="@+id/butt_114"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Fl"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_113"
+                app:layout_constraintTop_toBottomOf="@+id/butt_82" />
+
+            <Button
+                android:id="@+id/butt_115"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Mc"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_114"
+                app:layout_constraintTop_toBottomOf="@+id/butt_83" />
+
+            <Button
+                android:id="@+id/butt_116"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Lv"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_115"
+                app:layout_constraintTop_toBottomOf="@+id/butt_84" />
+
+            <Button
+                android:id="@+id/butt_117"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Ts"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_116"
+                app:layout_constraintTop_toBottomOf="@+id/butt_85" />
+
+            <Button
+                android:id="@+id/butt_118"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Og"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_117"
+                app:layout_constraintTop_toBottomOf="@+id/butt_86" />
+
+            <Button
+                android:id="@+id/butt_75"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Re"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_74"
                 app:layout_constraintTop_toBottomOf="@+id/butt_43" />
 
             <Button
                 android:id="@+id/butt_76"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Os"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_75"
                 app:layout_constraintTop_toBottomOf="@+id/butt_44" />
 
             <Button
                 android:id="@+id/butt_107"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Bh"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_106"
                 app:layout_constraintTop_toBottomOf="@+id/butt_75" />
 
             <Button
                 android:id="@+id/butt_108"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Hs"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_107"
                 app:layout_constraintTop_toBottomOf="@+id/butt_76" />
 
             <Button
                 android:id="@+id/butt_42"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Ma"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_41"
                 app:layout_constraintTop_toBottomOf="@+id/butt_24" />
 
             <Button
                 android:id="@+id/butt_74"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
-                app:layout_constraintStart_toEndOf="@+id/butt_73"
+                android:text="W"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_72"
                 app:layout_constraintTop_toBottomOf="@+id/butt_42" />
 
             <Button
                 android:id="@+id/butt_106"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Sg"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_105"
                 app:layout_constraintTop_toBottomOf="@+id/butt_74" />
 
             <Button
                 android:id="@+id/butt_39"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Y"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_38"
                 app:layout_constraintTop_toBottomOf="@+id/butt_21" />
 
             <Button
                 android:id="@+id/butt_40"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Zr"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_39"
                 app:layout_constraintTop_toBottomOf="@+id/butt_22" />
 
             <Button
                 android:id="@+id/butt_41"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Nb"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_40"
                 app:layout_constraintTop_toBottomOf="@+id/butt_23" />
 
             <Button
-                android:id="@+id/butt_73"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
-                android:layout_marginStart="12dp"
-                android:text="H"
-                app:layout_constraintStart_toEndOf="@+id/butt_72"
-                app:layout_constraintTop_toBottomOf="@+id/butt_41" />
-
-            <Button
                 android:id="@+id/butt_105"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Db"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_104"
-                app:layout_constraintTop_toBottomOf="@+id/butt_73" />
+                app:layout_constraintTop_toBottomOf="@+id/butt_72" />
 
             <Button
-                android:id="@+id/butt_72"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:id="@+id/butt_58"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Hf"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_57"
                 app:layout_constraintTop_toBottomOf="@+id/butt_40" />
 
             <Button
-                android:id="@+id/butt_104"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:id="@+id/butt_72"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Ta"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/butt_58"
+                app:layout_constraintTop_toBottomOf="@+id/butt_41" />
+
+            <Button
+                android:id="@+id/butt_104"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="12dp"
+                android:text="Rf"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_89"
-                app:layout_constraintTop_toBottomOf="@+id/butt_72" />
+                app:layout_constraintTop_toBottomOf="@+id/butt_76" />
 
             <Button
                 android:id="@+id/butt_57"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="La"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_56"
                 app:layout_constraintTop_toBottomOf="@+id/butt_39" />
 
             <Button
                 android:id="@+id/butt_89"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Ac"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_88"
                 app:layout_constraintTop_toBottomOf="@+id/butt_57" />
 
             <Button
                 android:id="@+id/butt_37"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="16dp"
-                android:text="H"
+                android:text="Rb"
+                android:textSize="24dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/butt_19" />
 
             <Button
                 android:id="@+id/butt_38"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Sr"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_37"
                 app:layout_constraintTop_toBottomOf="@+id/butt_20" />
 
             <Button
                 android:id="@+id/butt_55"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="16dp"
-                android:text="H"
+                android:text="Cs"
+                android:textSize="24dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/butt_37" />
 
             <Button
                 android:id="@+id/butt_56"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Ba"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_55"
                 app:layout_constraintTop_toBottomOf="@+id/butt_38" />
 
             <Button
                 android:id="@+id/butt_87"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="16dp"
-                android:text="H"
+                android:text="Fr"
+                android:textSize="24dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/butt_55" />
 
             <Button
                 android:id="@+id/butt_88"
-                android:layout_width="62dp"
-                android:layout_height="62dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
                 android:layout_marginStart="12dp"
-                android:text="H"
+                android:text="Ra"
+                android:textSize="24dp"
                 app:layout_constraintStart_toEndOf="@+id/butt_87"
                 app:layout_constraintTop_toBottomOf="@+id/butt_56" />
 
