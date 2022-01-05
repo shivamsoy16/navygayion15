@@ -4,62 +4,537 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InfoActivity"
-    >
-
-
-    <TextView
-        android:id="@+id/textView"
+    tools:context=".InfoActivity">
+<!--    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text=" Atomic No"
-        android:textAlignment="center"
-        android:textSize="48dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.0">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:labelFor="@+id/number"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textSize="24dp"
+                            android:paddingRight="24dp"
+                            android:textColor="@color/black"
+                            android:text="Atomic Number"/>
+
+                        <TextView
+                            android:id="@+id/number"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textSize="24dp"
+                            android:textColor="@color/black"
+                            android:text="number" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:labelFor="@+id/symbol"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textSize="24dp"
+                            android:textColor="@color/black"
+                            android:paddingRight="24dp"
+                            android:text="Symbol" />
+
+                        <TextView
+                            android:id="@+id/symbol"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textSize="24dp"
+                            android:textColor="@color/black"
+                            android:text="Symbol" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:labelFor="@+id/name"
+                            android:text="Name" />
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:text="Name" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:labelFor="@+id/mass"
+                            android:text="Mass" />
+
+                        <TextView
+                            android:id="@+id/weight"
+                            android:text="Mass" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:labelFor="@+id/valence"
+                            android:text="Valence" />
+
+                        <TextView
+                            android:id="@+id/valence"
+                            android:text="Valence" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:labelFor="@+id/radius"
+                            android:text="Radius" />
+
+                        <TextView
+                            android:id="@+id/radius"
+                            android:text="Radius" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:labelFor="@+id/ionization"
+                            android:text="Ionization" />
+
+                        <TextView
+                            android:id="@+id/ionization"
+                            android:text="Ionization" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:labelFor="@+id/electronegativity"
+                            android:text="Electronegativity" />
+
+                        <TextView
+                            android:id="@+id/electronegativity"
+                            android:text="Electronegativity" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:labelFor="@+id/electronaffinity"
+                            android:text="Electronaffinity" />
+
+                        <TextView
+                            android:id="@+id/electronaffinity"
+                            android:text="Electronaffinity" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:labelFor="@+id/discovered"
+                            android:text="Discovered In" />
+
+                        <TextView
+                            android:id="@+id/discovered"
+                            android:text="Discovered In" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:labelFor="@+id/heat"
+                            android:text="Heating Point" />
+
+                        <TextView
+                            android:id="@+id/heat"
+                            android:text="Heating Point" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:labelFor="@+id/state"
+                            android:text="State" />
+
+                        <TextView
+                            android:id="@+id/state"
+                            android:text="State" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:labelFor="@+id/density"
+                            android:text="Density" />
+
+                        <TextView
+                            android:id="@+id/density"
+                            android:text="Density" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:labelFor="@+id/melting"
+                            android:text="Melting Point" />
+
+                        <TextView
+                            android:id="@+id/melting"
+                            android:text="Melting Point" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:labelFor="@+id/boiling"
+                            android:text="Boiling Point" />
+
+                        <TextView
+                            android:id="@+id/boiling"
+                            android:text="Boiling Point" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:labelFor="@+id/conductivity"
+                            android:text="Conductivity" />
+
+                        <TextView
+                            android:id="@+id/conductivity"
+                            android:text="Conductivity" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:labelFor="@+id/hardness"
+                            android:text="Hardness" />
+
+                        <TextView
+                            android:id="@+id/hardness"
+                            android:text="Hardness" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:labelFor="@+id/module"
+                            android:text="Module" />
+
+                        <TextView
+                            android:id="@+id/module"
+                            android:text="Module" />
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow>
+                    <TextView
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:text="Atomic Number"
+                        android:paddingRight="24dp"/>
+                    <TextView
+                        android:id="@+id/number"
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:text="Number"/>
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:text="Symbol"
+                        android:paddingRight="24dp"/>
+                    <TextView
+                        android:id="@+id/symbol"
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:text="symbol"/>
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:text="Element Name"
+                        android:paddingRight="24dp"/>
+                    <TextView
+                        android:id="@+id/name"
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:text="DATA NOT FED"/>
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:text="Mass "
+                        android:paddingRight="24dp"/>
+                    <TextView
+                        android:id="@+id/mass"
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:text="DATA NOT FED"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:text="Valence"
+                        android:paddingRight="24dp"/>
+                    <TextView
+                        android:id="@+id/valence"
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:text="DATA NOT FED"/>
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:text="Radius"
+                        android:paddingRight="24dp"/>
+                    <TextView
+                        android:id="@+id/radius"
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:text="DATA NOT FED"/>
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:text="Ionization"
+                        android:paddingRight="24dp"/>
+                    <TextView
+                        android:id="@+id/ionization"
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:text="DATA NOT FED"/>
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:text="Electronegativity"
+                        android:paddingRight="24dp"/>
+                    <TextView
+                        android:id="@+id/electronegativity"
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:text="DATA NOT FED"/>
+                </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="ElectronAffinity"
+                    android:paddingRight="24dp"/>
+                <TextView
+                    android:id="@+id/electroaffinity"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="DATA NOT FED"/>
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="Discovered In"
+                    android:paddingRight="24dp"/>
+                <TextView
+                    android:id="@+id/discovered"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="DATA NOT FED"/>
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="Heat"
+                    android:paddingRight="24dp"/>
+                <TextView
+                    android:id="@+id/heat"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="DATA NOT FED"/>
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="State"
+                    android:paddingRight="24dp"/>
+                <TextView
+                    android:id="@+id/state"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="DATA NOT FED"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="Density"
+                    android:paddingRight="24dp"/>
+                <TextView
+                    android:id="@+id/density"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="DATA NOT FED"/>
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="Melting Point"
+                    android:paddingRight="24dp"/>
+                <TextView
+                    android:id="@+id/melting"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="DATA NOT FED"/>
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="Boiling Point"
+                    android:paddingRight="24dp"/>
+                <TextView
+                    android:id="@+id/boiling"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="DATA NOT FED"/>
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="Conductivity"
+                    android:paddingRight="24dp"/>
+                <TextView
+                    android:id="@+id/conductivity"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="DATA NOT FED"/>
+            </TableRow>
+                <TableRow>
+                    <TextView
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:text="hardness"
+                        android:paddingRight="24dp"/>
+                    <TextView
+                        android:id="@+id/hardness"
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:text="DATA NOT FED"/>
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:text="Modulus"
+                        android:paddingRight="24dp"/>
+                    <TextView
+                        android:id="@+id/modulus"
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:text="DATA NOT FED"/>
+
+                </TableRow>
 
 
-    <TextView
-        android:id="@+id/woo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=" Heloo"
-        android:textAlignment="center"
-        android:textSize="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="MissingConstraints" />
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="132dp"
-        android:text=" Element Name"
-        android:textAlignment="center"
-        android:textSize="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/woo2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=" Heloo"
-        android:textAlignment="center"
-        android:textSize="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView1"
-        tools:ignore="MissingConstraints" />
+            </TableLayout>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

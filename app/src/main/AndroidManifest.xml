@@ -17,9 +17,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <!--OR Other activities like this And  intent filter is not necessary in other activites-->
-        <activity android:name=".InfoActivity" >
+        </activity> <!-- OR Other activities like this And  intent filter is not necessary in other activites -->
+        <activity
+            android:name=".InfoActivity"
+            android:exported="true">
         </activity>
     </application>
 
