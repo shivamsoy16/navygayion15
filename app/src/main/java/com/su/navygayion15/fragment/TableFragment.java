@@ -1,6 +1,8 @@
 package com.su.navygayion15.fragment;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
@@ -14,10 +16,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TableLayout;
-import android.widget.TableRow;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.su.navygayion15.Elements;
+import com.su.navygayion15.InfoActivity;
 import com.su.navygayion15.R;
 
 import java.io.IOException;
@@ -30,7 +34,7 @@ import java.net.URL;
  * Use the {@link TableFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class TableFragment extends Fragment {
+public class TableFragment extends Fragment implements View.OnClickListener {
     String yourTextValue = "text";
     int numvals = 5;
     public static final int NAME = 0;
@@ -41,6 +45,48 @@ public class TableFragment extends Fragment {
 
     String[] details = new String[5];
     String[] detailVals = new String[5]; // Get the values from JSON here
+    public void otab1(View v)
+    {   Button bt1 = v.findViewById(R.id.butt_1);
+        bt1.setOnClickListener(this);
+        Button bt2 = v.findViewById(R.id.butt_2);
+        bt2.setOnClickListener(this);
+        Button bt3 = v.findViewById(R.id.butt_3);
+        bt3.setOnClickListener(this);
+        Button bt4 = v.findViewById(R.id.butt_4);
+        bt4.setOnClickListener(this);
+        Button bt5 = v.findViewById(R.id.butt_5);
+        bt5.setOnClickListener(this);
+        Button bt6 = v.findViewById(R.id.butt_6);
+        bt6.setOnClickListener(this);
+        Button bt7 = v.findViewById(R.id.butt_7);
+        bt7.setOnClickListener(this);
+        Button bt8 = v.findViewById(R.id.butt_8);
+        bt8.setOnClickListener(this);
+        Button bt9 = v.findViewById(R.id.butt_9);
+        bt9.setOnClickListener(this);
+        Button bt10 = v.findViewById(R.id.butt_10);
+        bt10.setOnClickListener(this);
+        Button bt11 = v.findViewById(R.id.butt_11);
+        bt11.setOnClickListener(this);
+        Button bt12 = v.findViewById(R.id.butt_12);
+        bt12.setOnClickListener(this);
+        Button bt13 = v.findViewById(R.id.butt_13);
+        bt13.setOnClickListener(this);
+        Button bt14 = v.findViewById(R.id.butt_14);
+        bt14.setOnClickListener(this);
+        Button bt15 = v.findViewById(R.id.butt_15);
+        bt15.setOnClickListener(this);
+        Button bt16 = v.findViewById(R.id.butt_16);
+        bt16.setOnClickListener(this);
+        Button bt17 = v.findViewById(R.id.butt_17);
+        bt17.setOnClickListener(this);
+        Button bt18 = v.findViewById(R.id.butt_18);
+        bt18.setOnClickListener(this);
+        Button bt19 = v.findViewById(R.id.butt_19);
+        bt19.setOnClickListener(this);
+        Button bt20 = v.findViewById(R.id.butt_20);
+        bt20.setOnClickListener(this);
+    }
 
 
 
@@ -91,8 +137,27 @@ public class TableFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_table, container, false);
-
+        otab1(view);
        return view;
+
+
+    }
+
+    @Override
+    public void onClick(View view) {
+
+        int goo1 = view.getId();
+        Resources res1 = view.getResources();
+        String idString = res1.getResourceEntryName(goo1);
+        String[] part1 = idString.split("(?<=\\D)(?=\\d)");
+        Elements.cos = Integer.parseInt(part1[1]);
+        int igg1 = (int) Elements.cos;
+        String[][] ele = Elements.getSubjects();
+        if (igg1<=16)
+            Toast.makeText(getActivity(), "Clicked on Button:- "+goo1+"  or  "+
+                    idString+" "+part1[0]+" and "+igg1+" "+ele[igg1-1][2], Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(getActivity(), InfoActivity.class);
+        startActivity(intent);
 
 
     }

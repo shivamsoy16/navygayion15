@@ -136,7 +136,7 @@ public class ListFragment extends Fragment implements View.OnClickListener {
         Elements.cos = Integer.parseInt(part[1]);
         int igg = (int) Elements.cos;
         String[][] ele = Elements.getSubjects();
-        if (igg<16)
+        if (igg<=16)
             Toast.makeText(getActivity(), "Clicked on Button:- "+goo+"  or  "+
                     idString+" "+part[0]+" and "+igg+" "+ele[igg-1][2], Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(getActivity(), InfoActivity.class);

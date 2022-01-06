@@ -291,7 +291,8 @@
 
         <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:textAlignment="center">
 
             <TableLayout
                 android:layout_width="match_parent"
@@ -301,7 +302,8 @@
                         android:textSize="24dp"
                         android:textColor="@color/black"
                         android:text="Atomic Number"
-                        android:paddingRight="24dp"/>
+                        android:paddingRight="24dp"
+                        android:paddingLeft="24dp"/>
                     <TextView
                         android:id="@+id/number"
                         android:textSize="24dp"
@@ -314,7 +316,8 @@
                         android:textSize="24dp"
                         android:textColor="@color/black"
                         android:text="Symbol"
-                        android:paddingRight="24dp"/>
+                        android:paddingRight="24dp"
+                        android:paddingLeft="24dp"/>
                     <TextView
                         android:id="@+id/symbol"
                         android:textSize="24dp"
@@ -327,7 +330,8 @@
                         android:textSize="24dp"
                         android:textColor="@color/black"
                         android:text="Element Name"
-                        android:paddingRight="24dp"/>
+                        android:paddingRight="24dp"
+                        android:paddingLeft="24dp"/>
                     <TextView
                         android:id="@+id/name"
                         android:textSize="24dp"
@@ -340,7 +344,8 @@
                         android:textSize="24dp"
                         android:textColor="@color/black"
                         android:text="Mass "
-                        android:paddingRight="24dp"/>
+                        android:paddingRight="24dp"
+                        android:paddingLeft="24dp"/>
                     <TextView
                         android:id="@+id/mass"
                         android:textSize="24dp"
@@ -352,7 +357,8 @@
                         android:textSize="24dp"
                         android:textColor="@color/black"
                         android:text="Valence"
-                        android:paddingRight="24dp"/>
+                        android:paddingRight="24dp"
+                        android:paddingLeft="24dp"/>
                     <TextView
                         android:id="@+id/valence"
                         android:textSize="24dp"
@@ -365,7 +371,8 @@
                         android:textSize="24dp"
                         android:textColor="@color/black"
                         android:text="Radius"
-                        android:paddingRight="24dp"/>
+                        android:paddingRight="24dp"
+                        android:paddingLeft="24dp"/>
                     <TextView
                         android:id="@+id/radius"
                         android:textSize="24dp"
@@ -378,7 +385,8 @@
                         android:textSize="24dp"
                         android:textColor="@color/black"
                         android:text="Ionization"
-                        android:paddingRight="24dp"/>
+                        android:paddingRight="24dp"
+                        android:paddingLeft="24dp"/>
                     <TextView
                         android:id="@+id/ionization"
                         android:textSize="24dp"
@@ -391,7 +399,8 @@
                         android:textSize="24dp"
                         android:textColor="@color/black"
                         android:text="Electronegativity"
-                        android:paddingRight="24dp"/>
+                        android:paddingRight="24dp"
+                        android:paddingLeft="24dp"/>
                     <TextView
                         android:id="@+id/electronegativity"
                         android:textSize="24dp"
@@ -404,7 +413,8 @@
                     android:textSize="24dp"
                     android:textColor="@color/black"
                     android:text="ElectronAffinity"
-                    android:paddingRight="24dp"/>
+                    android:paddingRight="24dp"
+                    android:paddingLeft="24dp"/>
                 <TextView
                     android:id="@+id/electroaffinity"
                     android:textSize="24dp"
@@ -417,7 +427,8 @@
                     android:textSize="24dp"
                     android:textColor="@color/black"
                     android:text="Discovered In"
-                    android:paddingRight="24dp"/>
+                    android:paddingRight="24dp"
+                    android:paddingLeft="24dp"/>
                 <TextView
                     android:id="@+id/discovered"
                     android:textSize="24dp"
@@ -430,12 +441,14 @@
                     android:textSize="24dp"
                     android:textColor="@color/black"
                     android:text="Heat"
-                    android:paddingRight="24dp"/>
+                    android:paddingRight="24dp"
+                    android:paddingLeft="24dp"/>
                 <TextView
                     android:id="@+id/heat"
                     android:textSize="24dp"
                     android:textColor="@color/black"
-                    android:text="DATA NOT FED"/>
+                    android:text="DATA NOT FED"
+                    />
 
             </TableRow>
             <TableRow>
@@ -443,24 +456,28 @@
                     android:textSize="24dp"
                     android:textColor="@color/black"
                     android:text="State"
-                    android:paddingRight="24dp"/>
+                    android:paddingRight="24dp"
+                    android:paddingLeft="24dp"/>
                 <TextView
                     android:id="@+id/state"
                     android:textSize="24dp"
                     android:textColor="@color/black"
-                    android:text="DATA NOT FED"/>
+                    android:text="DATA NOT FED"
+                    />
             </TableRow>
             <TableRow>
                 <TextView
                     android:textSize="24dp"
                     android:textColor="@color/black"
                     android:text="Density"
-                    android:paddingRight="24dp"/>
+                    android:paddingRight="24dp"
+                    android:paddingLeft="24dp"/>
                 <TextView
                     android:id="@+id/density"
                     android:textSize="24dp"
                     android:textColor="@color/black"
-                    android:text="DATA NOT FED"/>
+                    android:text="DATA NOT FED"
+                    />
 
             </TableRow>
             <TableRow>
@@ -468,7 +485,8 @@
                     android:textSize="24dp"
                     android:textColor="@color/black"
                     android:text="Melting Point"
-                    android:paddingRight="24dp"/>
+                    android:paddingRight="24dp"
+                    android:paddingLeft="24dp"/>
                 <TextView
                     android:id="@+id/melting"
                     android:textSize="24dp"
@@ -481,7 +499,8 @@
                     android:textSize="24dp"
                     android:textColor="@color/black"
                     android:text="Boiling Point"
-                    android:paddingRight="24dp"/>
+                    android:paddingRight="24dp"
+                    android:paddingLeft="24dp"/>
                 <TextView
                     android:id="@+id/boiling"
                     android:textSize="24dp"
@@ -494,7 +513,8 @@
                     android:textSize="24dp"
                     android:textColor="@color/black"
                     android:text="Conductivity"
-                    android:paddingRight="24dp"/>
+                    android:paddingRight="24dp"
+                    android:paddingLeft="24dp"/>
                 <TextView
                     android:id="@+id/conductivity"
                     android:textSize="24dp"
@@ -505,8 +525,9 @@
                     <TextView
                         android:textSize="24dp"
                         android:textColor="@color/black"
-                        android:text="hardness"
-                        android:paddingRight="24dp"/>
+                        android:text="Hardness"
+                        android:paddingRight="24dp"
+                        android:paddingLeft="24dp"/>
                     <TextView
                         android:id="@+id/hardness"
                         android:textSize="24dp"
@@ -519,7 +540,8 @@
                         android:textSize="24dp"
                         android:textColor="@color/black"
                         android:text="Modulus"
-                        android:paddingRight="24dp"/>
+                        android:paddingRight="24dp"
+                        android:paddingLeft="24dp"/>
                     <TextView
                         android:id="@+id/modulus"
                         android:textSize="24dp"

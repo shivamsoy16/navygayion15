@@ -42,7 +42,7 @@ public class InfoActivity extends AppCompatActivity {
         int value = igi-1;
         /*ssid.setText(ig3);
         ssid2.setText(ele[value][1]);*/
-        if (igi<=10) {
+        if (igi<=16) {
             ssid.setText(ig3);
             ssid2.setText(ele[value][1]);
             ssid3.setText(ele[value][2]);
