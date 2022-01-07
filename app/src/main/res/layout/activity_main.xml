@@ -6,15 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></include>
+
     <FrameLayout
         android:id="@+id/fragment_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="76dp"
+        android:layout_width="403dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="60dp"
         android:text="Table"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -22,14 +30,13 @@
         android:layout_width="403dp"
         android:layout_height="53dp"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
         app:itemBackground="@color/purple_200"
         app:itemIconTint="@android:color/black"
         app:itemTextColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/fragment_container"
-        app:layout_constraintVertical_bias="0.976"
         app:menu="@menu/bottom_nav_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

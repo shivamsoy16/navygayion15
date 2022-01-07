@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.su.navygayion15.fragment.ListFragment;
 
@@ -15,6 +18,25 @@ public class InfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
+
+        ImageView bar_logo = findViewById(R.id.bar_logo);
+        TextView bar_tittle = findViewById(R.id.bar_tittle);
+        ImageView bar_search = findViewById(R.id.search_bar);
+        ImageView bar_setting = findViewById(R.id.setting_bar);
+
+        bar_search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(InfoActivity.this, "Click Search Icon.", Toast.LENGTH_SHORT).show();
+            }
+        });
+        bar_setting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(InfoActivity.this, "Click Setting Icon.", Toast.LENGTH_SHORT).show();
+            }
+        });
+        bar_tittle.setText("Elements' Info");
         int igi = 0;
         igi = (int) Elements.getCos();
         String ig3 = String.valueOf(igi);

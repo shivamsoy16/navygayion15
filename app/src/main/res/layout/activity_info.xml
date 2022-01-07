@@ -5,6 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".InfoActivity">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar" />
 <!--    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -287,7 +291,9 @@
     </ScrollView>-->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        app:layout_constraintTop_toTopOf="parent">
 
         <HorizontalScrollView
             android:layout_width="match_parent"
@@ -297,259 +303,308 @@
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <TableRow>
+
                     <TextView
-                        android:textSize="24dp"
-                        android:textColor="@color/black"
-                        android:text="Atomic Number"
+                        android:paddingLeft="24dp"
                         android:paddingRight="24dp"
-                        android:paddingLeft="24dp"/>
+                        android:text="Atomic Number"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
                     <TextView
                         android:id="@+id/number"
-                        android:textSize="24dp"
+                        android:text="Number"
                         android:textColor="@color/black"
-                        android:text="Number"/>
+                        android:textSize="24dp" />
 
                 </TableRow>
+
                 <TableRow>
+
                     <TextView
-                        android:textSize="24dp"
-                        android:textColor="@color/black"
-                        android:text="Symbol"
+                        android:paddingLeft="24dp"
                         android:paddingRight="24dp"
-                        android:paddingLeft="24dp"/>
+                        android:text="Symbol"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
                     <TextView
                         android:id="@+id/symbol"
-                        android:textSize="24dp"
+                        android:text="symbol"
                         android:textColor="@color/black"
-                        android:text="symbol"/>
+                        android:textSize="24dp" />
 
                 </TableRow>
+
                 <TableRow>
+
                     <TextView
-                        android:textSize="24dp"
-                        android:textColor="@color/black"
-                        android:text="Element Name"
+                        android:paddingLeft="24dp"
                         android:paddingRight="24dp"
-                        android:paddingLeft="24dp"/>
+                        android:text="Element Name"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
                     <TextView
                         android:id="@+id/name"
-                        android:textSize="24dp"
+                        android:text="DATA NOT FED"
                         android:textColor="@color/black"
-                        android:text="DATA NOT FED"/>
+                        android:textSize="24dp" />
 
                 </TableRow>
+
                 <TableRow>
+
                     <TextView
-                        android:textSize="24dp"
-                        android:textColor="@color/black"
-                        android:text="Mass "
+                        android:paddingLeft="24dp"
                         android:paddingRight="24dp"
-                        android:paddingLeft="24dp"/>
+                        android:text="Mass "
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
                     <TextView
                         android:id="@+id/mass"
-                        android:textSize="24dp"
+                        android:text="DATA NOT FED"
                         android:textColor="@color/black"
-                        android:text="DATA NOT FED"/>
+                        android:textSize="24dp" />
                 </TableRow>
+
                 <TableRow>
+
                     <TextView
-                        android:textSize="24dp"
-                        android:textColor="@color/black"
-                        android:text="Valence"
+                        android:paddingLeft="24dp"
                         android:paddingRight="24dp"
-                        android:paddingLeft="24dp"/>
+                        android:text="Valence"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
                     <TextView
                         android:id="@+id/valence"
-                        android:textSize="24dp"
+                        android:text="DATA NOT FED"
                         android:textColor="@color/black"
-                        android:text="DATA NOT FED"/>
+                        android:textSize="24dp" />
 
                 </TableRow>
+
                 <TableRow>
+
                     <TextView
-                        android:textSize="24dp"
-                        android:textColor="@color/black"
-                        android:text="Radius"
+                        android:paddingLeft="24dp"
                         android:paddingRight="24dp"
-                        android:paddingLeft="24dp"/>
+                        android:text="Radius"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
                     <TextView
                         android:id="@+id/radius"
-                        android:textSize="24dp"
+                        android:text="DATA NOT FED"
                         android:textColor="@color/black"
-                        android:text="DATA NOT FED"/>
+                        android:textSize="24dp" />
 
                 </TableRow>
+
                 <TableRow>
+
                     <TextView
-                        android:textSize="24dp"
-                        android:textColor="@color/black"
-                        android:text="Ionization"
+                        android:paddingLeft="24dp"
                         android:paddingRight="24dp"
-                        android:paddingLeft="24dp"/>
+                        android:text="Ionization"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
                     <TextView
                         android:id="@+id/ionization"
-                        android:textSize="24dp"
+                        android:text="DATA NOT FED"
                         android:textColor="@color/black"
-                        android:text="DATA NOT FED"/>
+                        android:textSize="24dp" />
 
                 </TableRow>
+
                 <TableRow>
+
                     <TextView
-                        android:textSize="24dp"
-                        android:textColor="@color/black"
-                        android:text="Electronegativity"
+                        android:paddingLeft="24dp"
                         android:paddingRight="24dp"
-                        android:paddingLeft="24dp"/>
+                        android:text="Electronegativity"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
                     <TextView
                         android:id="@+id/electronegativity"
-                        android:textSize="24dp"
+                        android:text="DATA NOT FED"
                         android:textColor="@color/black"
-                        android:text="DATA NOT FED"/>
+                        android:textSize="24dp" />
                 </TableRow>
 
-            <TableRow>
-                <TextView
-                    android:textSize="24dp"
-                    android:textColor="@color/black"
-                    android:text="ElectronAffinity"
-                    android:paddingRight="24dp"
-                    android:paddingLeft="24dp"/>
-                <TextView
-                    android:id="@+id/electroaffinity"
-                    android:textSize="24dp"
-                    android:textColor="@color/black"
-                    android:text="DATA NOT FED"/>
-
-            </TableRow>
-            <TableRow>
-                <TextView
-                    android:textSize="24dp"
-                    android:textColor="@color/black"
-                    android:text="Discovered In"
-                    android:paddingRight="24dp"
-                    android:paddingLeft="24dp"/>
-                <TextView
-                    android:id="@+id/discovered"
-                    android:textSize="24dp"
-                    android:textColor="@color/black"
-                    android:text="DATA NOT FED"/>
-
-            </TableRow>
-            <TableRow>
-                <TextView
-                    android:textSize="24dp"
-                    android:textColor="@color/black"
-                    android:text="Heat"
-                    android:paddingRight="24dp"
-                    android:paddingLeft="24dp"/>
-                <TextView
-                    android:id="@+id/heat"
-                    android:textSize="24dp"
-                    android:textColor="@color/black"
-                    android:text="DATA NOT FED"
-                    />
-
-            </TableRow>
-            <TableRow>
-                <TextView
-                    android:textSize="24dp"
-                    android:textColor="@color/black"
-                    android:text="State"
-                    android:paddingRight="24dp"
-                    android:paddingLeft="24dp"/>
-                <TextView
-                    android:id="@+id/state"
-                    android:textSize="24dp"
-                    android:textColor="@color/black"
-                    android:text="DATA NOT FED"
-                    />
-            </TableRow>
-            <TableRow>
-                <TextView
-                    android:textSize="24dp"
-                    android:textColor="@color/black"
-                    android:text="Density"
-                    android:paddingRight="24dp"
-                    android:paddingLeft="24dp"/>
-                <TextView
-                    android:id="@+id/density"
-                    android:textSize="24dp"
-                    android:textColor="@color/black"
-                    android:text="DATA NOT FED"
-                    />
-
-            </TableRow>
-            <TableRow>
-                <TextView
-                    android:textSize="24dp"
-                    android:textColor="@color/black"
-                    android:text="Melting Point"
-                    android:paddingRight="24dp"
-                    android:paddingLeft="24dp"/>
-                <TextView
-                    android:id="@+id/melting"
-                    android:textSize="24dp"
-                    android:textColor="@color/black"
-                    android:text="DATA NOT FED"/>
-
-            </TableRow>
-            <TableRow>
-                <TextView
-                    android:textSize="24dp"
-                    android:textColor="@color/black"
-                    android:text="Boiling Point"
-                    android:paddingRight="24dp"
-                    android:paddingLeft="24dp"/>
-                <TextView
-                    android:id="@+id/boiling"
-                    android:textSize="24dp"
-                    android:textColor="@color/black"
-                    android:text="DATA NOT FED"/>
-
-            </TableRow>
-            <TableRow>
-                <TextView
-                    android:textSize="24dp"
-                    android:textColor="@color/black"
-                    android:text="Conductivity"
-                    android:paddingRight="24dp"
-                    android:paddingLeft="24dp"/>
-                <TextView
-                    android:id="@+id/conductivity"
-                    android:textSize="24dp"
-                    android:textColor="@color/black"
-                    android:text="DATA NOT FED"/>
-            </TableRow>
                 <TableRow>
+
                     <TextView
-                        android:textSize="24dp"
-                        android:textColor="@color/black"
-                        android:text="Hardness"
+                        android:paddingLeft="24dp"
                         android:paddingRight="24dp"
-                        android:paddingLeft="24dp"/>
+                        android:text="ElectronAffinity"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/electroaffinity"
+                        android:text="DATA NOT FED"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:text="Discovered In"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/discovered"
+                        android:text="DATA NOT FED"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:text="Heat"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/heat"
+                        android:text="DATA NOT FED"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:text="State"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/state"
+                        android:text="DATA NOT FED"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:text="Density"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/density"
+                        android:text="DATA NOT FED"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:text="Melting Point"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/melting"
+                        android:text="DATA NOT FED"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:text="Boiling Point"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/boiling"
+                        android:text="DATA NOT FED"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:text="Conductivity"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/conductivity"
+                        android:text="DATA NOT FED"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:text="Hardness"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
                     <TextView
                         android:id="@+id/hardness"
-                        android:textSize="24dp"
+                        android:text="DATA NOT FED"
                         android:textColor="@color/black"
-                        android:text="DATA NOT FED"/>
+                        android:textSize="24dp" />
 
                 </TableRow>
+
                 <TableRow>
+
                     <TextView
-                        android:textSize="24dp"
-                        android:textColor="@color/black"
-                        android:text="Modulus"
+                        android:paddingLeft="24dp"
                         android:paddingRight="24dp"
-                        android:paddingLeft="24dp"/>
+                        android:text="Modulus"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
                     <TextView
                         android:id="@+id/modulus"
-                        android:textSize="24dp"
+                        android:text="DATA NOT FED"
                         android:textColor="@color/black"
-                        android:text="DATA NOT FED"/>
+                        android:textSize="24dp" />
 
                 </TableRow>
-
 
 
             </TableLayout>
