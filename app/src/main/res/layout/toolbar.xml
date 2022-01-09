@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="80dp"
+    android:layout_height="60sp"
     android:background="@color/purple_500">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -12,12 +12,12 @@
 
         <ImageView
             android:id="@+id/bar_logo"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:padding="8dp"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginStart="16sp"
+            android:padding="8sp"
             android:src="@drawable/ic_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,20 +25,22 @@
             android:id="@+id/bar_tittle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="60sp"
             android:gravity="center_vertical"
             android:text="Chemistry Forum"
             android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/search_bar"
+            app:layout_constraintStart_toEndOf="@+id/bar_logo"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/search_bar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="80dp"
+            android:layout_marginEnd="80sp"
             android:src="@drawable/ic_search"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

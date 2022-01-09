@@ -3,7 +3,7 @@
     <item
         android:id="@+id/m_table"
         android:title="Table"
-        android:icon="@drawable/ic_table"/>
+        android:icon="@drawable/ic_table" />
     <item
         android:id="@+id/m_list"
         android:title="List"

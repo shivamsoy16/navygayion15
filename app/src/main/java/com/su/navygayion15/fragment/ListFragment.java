@@ -1,16 +1,19 @@
 package com.su.navygayion15.fragment;
 
 import android.content.Intent;
-import android.content.res.Resources;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TableLayout;
 import android.widget.TableRow;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
 
 import com.su.navygayion15.Elements;
 import com.su.navygayion15.InfoActivity;
@@ -23,57 +26,10 @@ import com.su.navygayion15.R;
  */
 public class ListFragment extends Fragment implements View.OnClickListener {
 
-    /*@Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        getActivity().getActionBar().setTitle("List");
-
-    }*/
-
+    String[][] ele = Elements.getSubjects();
     public int igg = 0;
 
-    public void otab(View v)
-    {   TableRow tbr1 = v.findViewById(R.id.but_1);
-        tbr1.setOnClickListener(this);
-        TableRow tbr2 = v.findViewById(R.id.but_2);
-        tbr2.setOnClickListener(this);
-        TableRow tbr3 = v.findViewById(R.id.but_3);
-        tbr3.setOnClickListener(this);
-        TableRow tbr4 = v.findViewById(R.id.but_4);
-        tbr4.setOnClickListener(this);
-        TableRow tbr5 = v.findViewById(R.id.but_5);
-        tbr5.setOnClickListener(this);
-        TableRow tbr6 = v.findViewById(R.id.but_6);
-        tbr6.setOnClickListener(this);
-        TableRow tbr7 = v.findViewById(R.id.but_7);
-        tbr7.setOnClickListener(this);
-        TableRow tbr8 = v.findViewById(R.id.but_8);
-        tbr8.setOnClickListener(this);
-        TableRow tbr9 = v.findViewById(R.id.but_9);
-        tbr9.setOnClickListener(this);
-        TableRow tbr10 = v.findViewById(R.id.but_10);
-        tbr10.setOnClickListener(this);
-        TableRow tbr11 = v.findViewById(R.id.but_11);
-        tbr11.setOnClickListener(this);
-        TableRow tbr12 = v.findViewById(R.id.but_12);
-        tbr12.setOnClickListener(this);
-        TableRow tbr13 = v.findViewById(R.id.but_13);
-        tbr13.setOnClickListener(this);
-        TableRow tbr14 = v.findViewById(R.id.but_14);
-        tbr14.setOnClickListener(this);
-        TableRow tbr15 = v.findViewById(R.id.but_15);
-        tbr15.setOnClickListener(this);
-        TableRow tbr16 = v.findViewById(R.id.but_16);
-        tbr16.setOnClickListener(this);
-        TableRow tbr17 = v.findViewById(R.id.but_17);
-        tbr17.setOnClickListener(this);
-        TableRow tbr18 = v.findViewById(R.id.but_18);
-        tbr18.setOnClickListener(this);
-        TableRow tbr19 = v.findViewById(R.id.but_19);
-        tbr19.setOnClickListener(this);
-        TableRow tbr20 = v.findViewById(R.id.but_20);
-        tbr20.setOnClickListener(this);
-    }
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -122,50 +78,64 @@ public class ListFragment extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_list, container, false);
-        otab(view);
+        View view = inflater.inflate(R.layout.fragment_list, container, false);
+
+        TableLayout tl = (TableLayout) view.findViewById(R.id.table_n);
+
+        for (int i = 0; i < 16; i++) {
+            // Make TR
+            TableRow tr = new TableRow(getActivity());
+            tr.setId(2456 + i);
+            tr.setOnClickListener(this);
+            //tr.setLayoutParams(new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.WRAP_CONTENT));
+            Typeface face = Typeface.createFromAsset(getActivity().getAssets(),
+                    "fonts/merri.ttf");
+            // Make TV to hold the details
+            TextView tv = new TextView(getActivity());
+            tv.setText(ele[i][0]);
+            tv.setTextColor(Color.BLACK);
+            tv.setPadding(10, 5, 10, 5);
+            tv.setTextSize(21);
+            tv.setGravity(Gravity.CENTER);
+            tv.setTypeface(face);
+            tr.addView(tv);
+
+            // Make TV to hold the detailvals
+
+            TextView tv1 = new TextView(getActivity());
+            tv1.setText(ele[i][1]);
+            tv1.setTextColor(Color.BLACK);
+            tv1.setPadding(10, 5, 10, 5);
+            tv1.setTextSize(21);
+            tv1.setGravity(Gravity.CENTER);
+            tv1.setTypeface(face);
+            tr.addView(tv1);
+
+            TextView tv2 = new TextView(getActivity());
+            tv2.setText(ele[i][2]);
+            tv2.setTextColor(Color.BLACK);
+            tv2.setPadding(10, 5, 10, 5);
+            tv2.setTextSize(21);
+            tv2.setTypeface(face);
+            tr.addView(tv2);
+
+            tl.addView(tr, new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.WRAP_CONTENT));
+        }
+
         return view;
-            }
+    }
 
     @Override
     public void onClick(View view) {
         int goo = view.getId();
-        Resources res = view.getResources();
-        String idString = res.getResourceEntryName(goo);
-        String[] part = idString.split("(?<=\\D)(?=\\d)");
-        Elements.cos = Integer.parseInt(part[1]);
-        int igg = (int) Elements.cos;
-        String[][] ele = Elements.getSubjects();
-        if (igg<=16)
-            Toast.makeText(getActivity(), "Clicked on Button:- "+goo+"  or  "+
-                    idString+" "+part[0]+" and "+igg+" "+ele[igg-1][2], Toast.LENGTH_SHORT).show();
+        int got = goo - 2456;
+        Elements.cos = got + 1;
+        Toast.makeText(getActivity(), "Clicked on Button:- " + goo + " Atm no " + got, Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(getActivity(), InfoActivity.class);
         startActivity(intent);
 
     }
-    /*static int extractInt(String str)
-    {
-        // Replacing every non-digit number
-        // with a space(" ")
-        str = str.replaceAll("[^\\d]", " ");
 
-        // Remove extra spaces from the beginning
-        // and the ending of the string
-        str = str.trim();
-
-        // Replace all the consecutive white
-        // spaces with a single space
-        str = str.replaceAll(" +", " ");
-
-        if (str.equals(""))
-            return "-1";
-
-        return str;
-    }*/
-
-    public int getIgg() {
-        return igg;
-    }
 }
 
 

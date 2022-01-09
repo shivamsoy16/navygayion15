@@ -1,14 +1,28 @@
 package com.su.navygayion15.fragment;
 
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
+import androidx.annotation.Size;
 import androidx.fragment.app.Fragment;
 
+import android.text.Layout;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
+import android.widget.Toast;
 
+import com.su.navygayion15.Elements;
+import com.su.navygayion15.InfoActivity;
 import com.su.navygayion15.R;
 
 /**
@@ -17,13 +31,6 @@ import com.su.navygayion15.R;
  * create an instance of this fragment.
  */
 public class TrendFragment extends Fragment {
-
-/*    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        getActivity().getActionBar().setTitle("Trend");
-
-    }*/
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -63,12 +70,15 @@ public class TrendFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_trend, container, false);
+        View view =  inflater.inflate(R.layout.fragment_trend, container, false);
+        return view;
+
     }
 }

@@ -4,9 +4,9 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryDark">@color/purple_700</item>
-        <item name="colorAccent">@color/purple_200</item>
+        <item name="colorPrimary">#023047</item>
+        <item name="colorPrimaryDark">#219EBC</item>
+        <item name="colorAccent">#8ECAE6</item>
     </style>
 
 

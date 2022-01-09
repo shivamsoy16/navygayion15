@@ -2,9 +2,9 @@
     <!-- Base application theme. -->
     <style name="Theme.Navygayion15" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">#023047</item>
+        <item name="colorPrimaryDark">#219EBC</item>
+        <item name="colorAccent">#8ECAE6</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>

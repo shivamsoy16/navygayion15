@@ -10,11 +10,13 @@
         <entry key="..\:/Android studio propj/Navygayion15/app/src/main/res/drawable/ic_setting.xml" value="0.1515625" />
         <entry key="..\:/Android studio propj/Navygayion15/app/src/main/res/drawable/ic_table.xml" value="0.15208333333333332" />
         <entry key="..\:/Android studio propj/Navygayion15/app/src/main/res/drawable/ic_trend.xml" value="0.15208333333333332" />
+        <entry key="..\:/Android studio propj/Navygayion15/app/src/main/res/font/fonts.xml" value="0.16354166666666667" />
         <entry key="..\:/Android studio propj/Navygayion15/app/src/main/res/layout/activity_info.xml" value="0.18" />
-        <entry key="..\:/Android studio propj/Navygayion15/app/src/main/res/layout/activity_main.xml" value="0.12" />
+        <entry key="..\:/Android studio propj/Navygayion15/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Android studio propj/Navygayion15/app/src/main/res/layout/activity_tab.xml" value="0.2" />
         <entry key="..\:/Android studio propj/Navygayion15/app/src/main/res/layout/fragment_list.xml" value="0.18" />
-        <entry key="..\:/Android studio propj/Navygayion15/app/src/main/res/layout/fragment_table.xml" value="0.25" />
+        <entry key="..\:/Android studio propj/Navygayion15/app/src/main/res/layout/fragment_table.xml" value="0.18" />
+        <entry key="..\:/Android studio propj/Navygayion15/app/src/main/res/layout/fragment_trend.xml" value="0.2" />
         <entry key="..\:/Android studio propj/Navygayion15/app/src/main/res/layout/toolbar.xml" value="0.48518518518518516" />
         <entry key="..\:/Android studio propj/Navygayion15/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1359375" />
         <entry key="..\:/Android studio propj/Navygayion15/app/src/main/res/menu/custom_menu.xml" value="0.13541666666666666" />
