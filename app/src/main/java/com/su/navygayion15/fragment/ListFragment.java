@@ -82,7 +82,7 @@ public class ListFragment extends Fragment implements View.OnClickListener {
 
         TableLayout tl = (TableLayout) view.findViewById(R.id.table_n);
 
-        for (int i = 0; i < 16; i++) {
+        for (int i = 0; i < 108; i++) {
             // Make TR
             TableRow tr = new TableRow(getActivity());
             tr.setId(2456 + i);

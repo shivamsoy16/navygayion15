@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="60sp"
+    android:layout_height="70sp"
     android:background="@color/purple_500">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -25,12 +25,11 @@
             android:id="@+id/bar_tittle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="60sp"
+            android:fontFamily="@font/merri"
             android:gravity="center_vertical"
             android:text="Chemistry Forum"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/search_bar"
             app:layout_constraintStart_toEndOf="@+id/bar_logo"
@@ -40,11 +39,12 @@
             android:id="@+id/search_bar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="80sp"
+            android:layout_marginEnd="60dp"
             android:src="@drawable/ic_search"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.583"
             app:tint="@color/white" />
 
         <ImageView

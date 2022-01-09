@@ -3,6 +3,7 @@ package com.su.navygayion15;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -23,6 +24,16 @@ public class InfoActivity extends AppCompatActivity {
         TextView bar_tittle = findViewById(R.id.bar_tittle);
         ImageView bar_search = findViewById(R.id.search_bar);
         ImageView bar_setting = findViewById(R.id.setting_bar);
+        ImageView wiki = findViewById(R.id.wiki);
+
+        wiki.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse("http://www.google.com"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
 
         bar_search.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +52,7 @@ public class InfoActivity extends AppCompatActivity {
         igi = (int) Elements.getCos();
         String ig3 = String.valueOf(igi);
         String[][] ele = Elements.getSubjects();
+        TextView ssd = findViewById(R.id.textView);
         TextView ssid = (TextView) findViewById (R.id.number);
         TextView ssid2 = (TextView) findViewById (R.id.symbol);
         TextView ssid3 = (TextView) findViewById (R.id.name);
@@ -64,7 +76,7 @@ public class InfoActivity extends AppCompatActivity {
         int value = igi-1;
         /*ssid.setText(ig3);
         ssid2.setText(ele[value][1]);*/
-        if (igi<=16) {
+            ssd.setText(ele[value][2]);
             ssid.setText(ig3);
             ssid2.setText(ele[value][1]);
             ssid3.setText(ele[value][2]);
@@ -84,7 +96,7 @@ public class InfoActivity extends AppCompatActivity {
             ssid17.setText(ele[value][16]);
             ssid18.setText(ele[value][17]);
 
-        }
+
 
 
     }
