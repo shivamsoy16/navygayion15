@@ -45,7 +45,7 @@ public class TableFragment extends Fragment implements View.OnClickListener {
 
     String[] details = new String[5];
     String[] detailVals = new String[5]; // Get the values from JSON here
-    public void otab1(View v)
+/*    public void otab1(View v)
     {   Button bt1 = v.findViewById(R.id.butt_1);
         bt1.setOnClickListener(this);
         Button bt2 = v.findViewById(R.id.butt_2);
@@ -86,7 +86,7 @@ public class TableFragment extends Fragment implements View.OnClickListener {
         bt19.setOnClickListener(this);
         Button bt20 = v.findViewById(R.id.butt_20);
         bt20.setOnClickListener(this);
-    }
+    }*/
 
 
 
@@ -137,7 +137,7 @@ public class TableFragment extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_table, container, false);
-        otab1(view);
+        /*otab1(view);*/
        return view;
 
 

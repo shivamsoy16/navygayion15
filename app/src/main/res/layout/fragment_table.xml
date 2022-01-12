@@ -7,1668 +7,1497 @@
     tools:context=".fragment.TableFragment">
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-<!--        <TableLayout
-            android:id="@+id/tableLayout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="120dp"
-                    android:text="1"
-                    android:fontFamily="@font/merri"
-                    android:gravity="center_horizontal"
-                    android:textSize="35dp" />
-
-            </TableRow>
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="32dp"
-                    android:text="2"
-                    android:gravity="center_horizontal"
-                    android:fontFamily="@font/merri"
-                    android:textSize="35dp" />
-
-            </TableRow>
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="32dp"
-                    android:text="3"
-                    android:gravity="center_horizontal"
-                    android:fontFamily="@font/merri"
-                    android:textSize="35dp" />
-
-            </TableRow>
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="31dp"
-                    android:text="4"
-                    android:gravity="center_horizontal"
-                    android:fontFamily="@font/merri"
-                    android:textSize="35dp" />
-
-            </TableRow>
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="28dp"
-                    android:text="5"
-                    android:gravity="center_horizontal"
-                    android:fontFamily="@font/merri"
-                    android:textSize="35dp" />
-
-            </TableRow>
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="28dp"
-                    android:text="6"
-                    android:gravity="center_horizontal"
-                    android:fontFamily="@font/merri"
-                    android:textSize="35dp" />
-
-            </TableRow>
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="25dp"
-                    android:text="7"
-                    android:gravity="center_horizontal"
-                    android:fontFamily="@font/merri"
-                    android:textSize="35dp" />
-
-            </TableRow>
-        </TableLayout>-->
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <HorizontalScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="1600dp"
-                android:layout_height="match_parent">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-
-
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="1625dp"
-                    android:layout_height="28dp"
-                    android:layout_marginTop="36dp"
-                    android:fontFamily="@font/merri"
-                    android:paddingLeft="10dp"
-                    android:text="H"
-                    android:textAllCaps="false"
-                    android:visibility="invisible"
+                <TableLayout
+                    android:id="@+id/tableLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Button
-                    android:id="@+id/butt_1"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="48dp"
-                    android:fontFamily="@font/merri"
-                    android:text="H"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/button2" />
-
-                <Button
-                    android:id="@+id/butt_3"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="32dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Li"
-                    android:textAllCaps="false"
-
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_1" />
-
-                <Button
-                    android:id="@+id/butt_4"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Be"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_3"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_1" />
-
-                <Button
-                    android:id="@+id/butt_11"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="32dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Na"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_3" />
-
-                <Button
-                    android:id="@+id/butt_12"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Mg"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_11"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_4" />
-
-                <Button
-                    android:id="@+id/butt_19"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="32dp"
-                    android:fontFamily="@font/merri"
-                    android:text="K"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_11" />
-
-                <Button
-                    android:id="@+id/butt_20"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Ca"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_19"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_12" />
-
-                <Button
-                    android:id="@+id/butt_21"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Sc"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_20"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_12" />
-
-                <Button
-                    android:id="@+id/butt_22"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Ti"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_21"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_12" />
-
-                <Button
-                    android:id="@+id/butt_23"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="V"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_22"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_12" />
-
-                <Button
-                    android:id="@+id/butt_24"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Cr"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_23"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_12" />
-
-                <Button
-                    android:id="@+id/butt_25"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Mn"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_24"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_12" />
-
-                <Button
-                    android:id="@+id/butt_26"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Fe"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_25"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_12" />
-
-                <Button
-                    android:id="@+id/butt_27"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Co"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_26"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_12" />
-
-                <Button
-                    android:id="@+id/butt_28"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Ni"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_27"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_12" />
-
-                <Button
-                    android:id="@+id/butt_29"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Cu"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_28"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_12" />
-
-                <Button
-                    android:id="@+id/butt_30"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Zn"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_29"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_12" />
-
-                <Button
-                    android:id="@+id/butt_5"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="124dp"
-                    android:fontFamily="@font/merri"
-                    android:text="B"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_30"
-                    app:layout_constraintTop_toBottomOf="@+id/button2" />
-
-                <Button
-                    android:id="@+id/butt_6"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="124dp"
-                    android:fontFamily="@font/merri"
-                    android:text="C"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_5"
-                    app:layout_constraintTop_toBottomOf="@+id/button2" />
-
-                <Button
-                    android:id="@+id/butt_7"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="124dp"
-                    android:fontFamily="@font/merri"
-                    android:text="N"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_6"
-                    app:layout_constraintTop_toBottomOf="@+id/button2" />
-
-                <Button
-                    android:id="@+id/butt_9"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="124dp"
-                    android:fontFamily="@font/merri"
-                    android:text="F"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_8"
-                    app:layout_constraintTop_toBottomOf="@+id/button2" />
-
-                <Button
-                    android:id="@+id/butt_10"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Ne"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_9"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_2" />
-
-                <Button
-                    android:id="@+id/butt_2"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="48dp"
-                    android:fontFamily="@font/merri"
-                    android:text="He"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_9"
-                    app:layout_constraintTop_toBottomOf="@+id/button2" />
-
-                <Button
-                    android:id="@+id/butt_8"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="124dp"
-                    android:fontFamily="@font/merri"
-                    android:text="O"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_7"
-                    app:layout_constraintTop_toBottomOf="@+id/button2" />
-
-                <Button
-                    android:id="@+id/butt_13"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Al"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_30"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_5" />
-
-                <Button
-                    android:id="@+id/butt_14"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Si"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_13"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_6" />
-
-                <Button
-                    android:id="@+id/butt_15"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="P"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_14"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_7" />
-
-                <Button
-                    android:id="@+id/butt_16"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="S"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_15"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_8" />
-
-                <Button
-                    android:id="@+id/butt_17"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Cl"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_16"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_9" />
-
-                <Button
-                    android:id="@+id/butt_18"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Ar"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_17"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_10" />
-
-                <Button
-                    android:id="@+id/butt_31"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Ga"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_30"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_13" />
-
-                <Button
-                    android:id="@+id/butt_32"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Ge"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_31"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_14" />
-
-                <Button
-                    android:id="@+id/butt_33"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="As"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_32"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_15" />
-
-                <Button
-                    android:id="@+id/butt_34"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Se"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_33"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_16" />
-
-                <Button
-                    android:id="@+id/butt_35"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Br"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_34"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_17" />
-
-                <Button
-                    android:id="@+id/butt_36"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Kr"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_35"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_18" />
-
-                <Button
-                    android:id="@+id/butt_43"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Tc"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_42"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_25" />
-
-                <Button
-                    android:id="@+id/butt_44"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Ru"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_43"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_26" />
-
-                <Button
-                    android:id="@+id/butt_45"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Rh"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_44"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_27" />
-
-                <Button
-                    android:id="@+id/butt_46"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Pd"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_45"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_28" />
-
-                <Button
-                    android:id="@+id/butt_47"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Ag"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_46"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_29" />
-
-                <Button
-                    android:id="@+id/butt_48"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Cs"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_47"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_30" />
-
-                <Button
-                    android:id="@+id/butt_49"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="In"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_48"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_31" />
-
-                <Button
-                    android:id="@+id/butt_50"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Sn"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_49"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_32" />
-
-                <Button
-                    android:id="@+id/butt_51"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Sb"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_50"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_33" />
-
-                <Button
-                    android:id="@+id/butt_52"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Te"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_51"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_34" />
-
-                <Button
-                    android:id="@+id/butt_53"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="I"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_52"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_35" />
-
-                <Button
-                    android:id="@+id/butt_54"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Xe"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_53"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_36" />
-
-                <Button
-                    android:id="@+id/butt_77"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Ir"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_76"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_45" />
-
-                <Button
-                    android:id="@+id/butt_78"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Pt"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_77"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_46" />
-
-                <Button
-                    android:id="@+id/butt_79"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Au"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_78"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_47" />
-
-                <Button
-                    android:id="@+id/butt_80"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Hg"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_79"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_48" />
-
-                <Button
-                    android:id="@+id/butt_81"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Ti"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_80"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_49" />
-
-                <Button
-                    android:id="@+id/butt_82"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Pb"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_81"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_50" />
-
-                <Button
-                    android:id="@+id/butt_83"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Bi"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_82"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_51" />
-
-                <Button
-                    android:id="@+id/butt_84"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Po"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_83"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_52" />
-
-                <Button
-                    android:id="@+id/butt_85"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="At"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_84"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_53" />
-
-                <Button
-                    android:id="@+id/butt_86"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Rn"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_85"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_54" />
-
-                <Button
-                    android:id="@+id/butt_109"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Mt"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_108"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_77" />
-
-                <Button
-                    android:id="@+id/butt_110"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Ds"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_109"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_78" />
-
-                <Button
-                    android:id="@+id/butt_111"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Rg"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_110"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_79" />
-
-                <Button
-                    android:id="@+id/butt_112"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Cn"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_111"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_80" />
-
-                <Button
-                    android:id="@+id/butt_113"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Nh"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_112"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_81" />
-
-                <Button
-                    android:id="@+id/butt_114"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Fl"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_113"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_82" />
-
-                <Button
-                    android:id="@+id/butt_115"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Mc"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_114"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_83" />
-
-                <Button
-                    android:id="@+id/butt_116"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Lv"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_115"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_84" />
-
-                <Button
-                    android:id="@+id/butt_117"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Ts"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_116"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_85" />
-
-                <Button
-                    android:id="@+id/butt_118"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Og"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_117"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_86" />
-
-                <Button
-                    android:id="@+id/butt_75"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Re"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_74"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_43" />
-
-                <Button
-                    android:id="@+id/butt_76"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Os"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_75"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_44" />
-
-                <Button
-                    android:id="@+id/butt_107"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Bh"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_106"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_75" />
-
-                <Button
-                    android:id="@+id/butt_108"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Hs"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_107"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_76" />
-
-                <Button
-                    android:id="@+id/butt_42"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Ma"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_41"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_24" />
-
-                <Button
-                    android:id="@+id/butt_74"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="W"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_73"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_42" />
-
-                <Button
-                    android:id="@+id/butt_106"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Sg"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_74" />
-
-                <Button
-                    android:id="@+id/butt_39"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Y"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_38"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_21" />
-
-                <Button
-                    android:id="@+id/butt_40"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Zr"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_39"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_22" />
-
-                <Button
-                    android:id="@+id/butt_41"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Nb"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_40"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_23" />
-
-                <Button
-                    android:id="@+id/butt_58"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="68dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Ce"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_104"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_" />
-
-                <Button
-                    android:id="@+id/butt_90"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Th"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_104"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_58" />
-
-                <Button
-                    android:id="@+id/butt_91"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Pa"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_90"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_58" />
-
-                <Button
-                    android:id="@+id/butt_92"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="U"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_91"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_60" />
-
-                <Button
-                    android:id="@+id/butt_94"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Pu"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_93"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_62" />
-
-                <Button
-                    android:id="@+id/butt_95"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Am"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_94"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_63" />
-
-                <Button
-                    android:id="@+id/butt_96"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Cm"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_95"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_64" />
-
-                <Button
-                    android:id="@+id/butt_97"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Bk"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_96"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_65" />
-
-                <Button
-                    android:id="@+id/butt_98"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Cf"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_97"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_66" />
-
-                <Button
-                    android:id="@+id/butt_99"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Es"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_98"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_67" />
-
-                <Button
-                    android:id="@+id/butt_100"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Fm"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_99"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_68" />
-
-                <Button
-                    android:id="@+id/butt_101"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Md"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_100"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_69" />
-
-                <Button
-                    android:id="@+id/butt_102"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="No"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_101"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_70" />
-
-                <Button
-                    android:id="@+id/butt_103"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Lr"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_102"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_71" />
-
-                <Button
-                    android:id="@+id/butt_93"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Np"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_92"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_61" />
-
-                <Button
-                    android:id="@+id/butt_60"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="68dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Nd"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_59"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_107" />
-
-                <Button
-                    android:id="@+id/butt_61"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="68dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Pm"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_60"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_108" />
-
-                <Button
-                    android:id="@+id/butt_62"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="68dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Sm"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_61"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_109" />
-
-                <Button
-                    android:id="@+id/butt_63"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="68dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Eu"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_62"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_110" />
-
-                <Button
-                    android:id="@+id/butt_65"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="68dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Tb"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_64"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_112" />
-
-                <Button
-                    android:id="@+id/butt_66"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="68dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Dy"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_65"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_113" />
-
-                <Button
-                    android:id="@+id/butt_67"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="68dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Ho"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_66"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_114" />
-
-                <Button
-                    android:id="@+id/butt_68"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="68dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Er"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_67"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_115" />
-
-                <Button
-                    android:id="@+id/butt_69"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="68dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Tm"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_68"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_116" />
-
-                <Button
-                    android:id="@+id/butt_70"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="68dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Yb"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_69"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_117" />
-
-                <Button
-                    android:id="@+id/butt_71"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="68dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Lu"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_70"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_118" />
-
-                <Button
-                    android:id="@+id/butt_64"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="68dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Gd"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_63"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_111" />
-
-                <Button
-                    android:id="@+id/butt_59"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="68dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Pr"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_58"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_106" />
-
-                <Button
-                    android:id="@+id/butt_"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Db"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_104"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_72" />
-
-                <Button
-                    android:id="@+id/butt_72"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Hf"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_57"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_40" />
-
-                <Button
-                    android:id="@+id/butt_73"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Ta"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_72"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_41" />
-
-                <Button
-                    android:id="@+id/butt_104"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Rf"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_89"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_76" />
-
-                <Button
-                    android:id="@+id/butt_57"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="La"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_56"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_39" />
-
-                <Button
-                    android:id="@+id/butt_89"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Ac"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_88"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_57" />
-
-                <Button
-                    android:id="@+id/butt_37"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="32dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Rb"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_19" />
-
-                <Button
-                    android:id="@+id/butt_38"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Sr"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_37"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_20" />
-
-                <Button
-                    android:id="@+id/butt_55"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="32dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Cs"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_37" />
-
-                <Button
-                    android:id="@+id/butt_56"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Ba"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_55"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_38" />
-
-                <Button
-                    android:id="@+id/butt_87"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="32dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Fr"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_55" />
-
-                <Button
-                    android:id="@+id/butt_88"
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/merri"
-                    android:text="Ra"
-                    android:textAllCaps="false"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_87"
-                    app:layout_constraintTop_toBottomOf="@+id/butt_56" />
-
-                <TextView
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout android:orientation="vertical">
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_1"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/first"
+                                app:name="Hydrogen"
+                                app:no="1"
+                                app:symbol="H" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_3"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/second"
+                                app:name="Lithium"
+                                app:no="3"
+                                app:symbol="Li" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_11"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/second"
+                                app:name="Sodium"
+                                app:no="11"
+                                app:symbol="Na" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_19"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/second"
+                                app:name="Potassium"
+                                app:no="19"
+                                app:symbol="K" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_37"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/second"
+                                app:name="Rubidium"
+                                app:no="37"
+                                app:symbol="Rb" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_55"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/second"
+                                app:name="Cesium"
+                                app:no="55"
+                                app:symbol="Cs" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_87"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/second"
+                                app:name="Francium"
+                                app:no="87"
+                                app:symbol="Fr" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="73sp"
+                            android:orientation="vertical">
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_4"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/third"
+                                app:name="Beryllium"
+                                app:no="3"
+                                app:symbol="Be" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_12"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/third"
+                                app:name="Magnesium"
+                                app:no="12"
+                                app:symbol="Mg" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_20"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/third"
+                                app:name="Calcium"
+                                app:no="20"
+                                app:symbol="Ca" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_38"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/third"
+                                app:name="Strontium"
+                                app:no="38"
+                                app:symbol="Sr" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_56"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/third"
+                                app:name="Barium"
+                                app:no="56"
+                                app:symbol="Ba" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_88"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/third"
+                                app:name="Radium"
+                                app:no="88"
+                                app:symbol="Ra" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="219sp"
+                            android:orientation="vertical">
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_21"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Scandium"
+                                app:no="21"
+                                app:symbol="Sc" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_39"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Yttrium"
+                                app:no="39"
+                                app:symbol="Y" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_57"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Lanthanum"
+                                app:no="57"
+                                app:symbol="La" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_89"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Actinium"
+                                app:no="89"
+                                app:symbol="Ac" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="219sp"
+                            android:orientation="vertical">
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_22"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Titanium"
+                                app:no="22"
+                                app:symbol="Ti" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_40"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Zirconium"
+                                app:no="40"
+                                app:symbol="Zr" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_72"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Hafnium"
+                                app:no="72"
+                                app:symbol="Hf" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_104"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Rutherfordium"
+                                app:no="104"
+                                app:symbol="Rf" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="219sp"
+                            android:orientation="vertical">
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_23"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Vanadium"
+                                app:no="23"
+                                app:symbol="V" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_41"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Niobium"
+                                app:no="41"
+                                app:symbol="Nb" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_73"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Tantalum"
+                                app:no="73"
+                                app:symbol="Ta" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_105"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Dubnium"
+                                app:no="105"
+                                app:symbol="Db" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="219sp"
+                            android:orientation="vertical">
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_24"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Chromium"
+                                app:no="24"
+                                app:symbol="Cr" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_42"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Molybdenum"
+                                app:no="42"
+                                app:symbol="Mo" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_74"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Tungsten"
+                                app:no="74"
+                                app:symbol="W" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_106"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Seaborgium"
+                                app:no="106"
+                                app:symbol="Sg" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="219sp"
+                            android:orientation="vertical">
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_25"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Manganese"
+                                app:no="25"
+                                app:symbol="Mn" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_43"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Technetium"
+                                app:no="43"
+                                app:symbol="Tc" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_75"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Rhenium"
+                                app:no="75"
+                                app:symbol="Re" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_107"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Bohrium"
+                                app:no="107"
+                                app:symbol="Bh" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="219sp"
+                            android:orientation="vertical">
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_26"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Iron"
+                                app:no="26"
+                                app:symbol="Fe" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_44"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Ruthenium"
+                                app:no="44"
+                                app:symbol="Ru" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_76"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Osmium"
+                                app:no="76"
+                                app:symbol="Os" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_108"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Hassium"
+                                app:no="108"
+                                app:symbol="Hs" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="219sp"
+                            android:orientation="vertical">
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_27"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Cobalt"
+                                app:no="27"
+                                app:symbol="Co" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_45"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Rhodium"
+                                app:no="45"
+                                app:symbol="Rh" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_77"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Iridium"
+                                app:no="77"
+                                app:symbol="Ir" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_109"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Meitnerium"
+                                app:no="109"
+                                app:symbol="Mt" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="219sp"
+                            android:orientation="vertical">
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_28"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Nickel"
+                                app:no="28"
+                                app:symbol="Ni" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_46"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Palladium"
+                                app:no="46"
+                                app:symbol="Pd" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_78"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Platinum"
+                                app:no="78"
+                                app:symbol="Pt" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_110"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Darmstadtium"
+                                app:no="110"
+                                app:symbol="Ds" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="219sp"
+                            android:orientation="vertical">
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_29"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Copper"
+                                app:no="29"
+                                app:symbol="Cu" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_47"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Silver"
+                                app:no="47"
+                                app:symbol="Ag" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_79"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Gold"
+                                app:no="79"
+                                app:symbol="Au" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_111"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Roentgenium"
+                                app:no="111"
+                                app:symbol="Rg" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="219sp"
+                            android:orientation="vertical">
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_30"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Zinc"
+                                app:no="30"
+                                app:symbol="Zn" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_48"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Cadmium"
+                                app:no="48"
+                                app:symbol="Cd" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_80"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Mercury"
+                                app:no="80"
+                                app:symbol="Hg" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_112"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Copernicium"
+                                app:no="112"
+                                app:symbol="Cn" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="73sp"
+                            android:orientation="vertical">
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_5"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/sixth"
+                                app:name="Boron"
+                                app:no="5"
+                                app:symbol="B" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_13"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Aluminium"
+                                app:no="13"
+                                app:symbol="Ga" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_31"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Gallium"
+                                app:no="31"
+                                app:symbol="Ga" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_49"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Indium"
+                                app:no="49"
+                                app:symbol="In" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_81"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Thallium"
+                                app:no="81"
+                                app:symbol="Tl" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_113"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Nihonium"
+                                app:no="113"
+                                app:symbol="Nh" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="73sp"
+                            android:orientation="vertical">
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_6"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/seventh"
+                                app:name="carbon"
+                                app:no="6"
+                                app:symbol="C" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_14"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/sixth"
+                                app:name="Silicon"
+                                app:no="14"
+                                app:symbol="Si" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_32"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/sixth"
+                                app:name="Germanium"
+                                app:no="32"
+                                app:symbol="Ge" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_50"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Tin"
+                                app:no="50"
+                                app:symbol="Sn" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_82"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Lead"
+                                app:no="82"
+                                app:symbol="Pb" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_114"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Flerovium"
+                                app:no="114"
+                                app:symbol="Fl" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="73sp"
+                            android:orientation="vertical">
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_7"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/seventh"
+                                app:name="Nitrogen"
+                                app:no="7"
+                                app:symbol="N" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_15"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/seventh"
+                                app:name="Phosphorus"
+                                app:no="15"
+                                app:symbol="P" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_33"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/sixth"
+                                app:name="Arsenic"
+                                app:no="33"
+                                app:symbol="As" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_51"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/sixth"
+                                app:name="Antimony"
+                                app:no="51"
+                                app:symbol="Sb" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_83"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Bismuth"
+                                app:no="83"
+                                app:symbol="Bi" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_115"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Moscovium"
+                                app:no="115"
+                                app:symbol="Mc" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="73sp"
+                            android:orientation="vertical">
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_8"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/seventh"
+                                app:name="Oxygen"
+                                app:no="8"
+                                app:symbol="O" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_16"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/seventh"
+                                app:name="Sulfur"
+                                app:no="16"
+                                app:symbol="S" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_34"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/seventh"
+                                app:name="Selenium"
+                                app:no="34"
+                                app:symbol="Se" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_52"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/sixth"
+                                app:name="Tellurium"
+                                app:no="52"
+                                app:symbol="Te" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_84"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/sixth"
+                                app:name="Polonium"
+                                app:no="84"
+                                app:symbol="84" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_116"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Livermorium"
+                                app:no="116"
+                                app:symbol="Lv" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="73sp"
+                            android:orientation="vertical">
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_9"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eight"
+                                app:name="Fluorine"
+                                app:no="9"
+                                app:symbol="F" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_17"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eight"
+                                app:name="Chlorine"
+                                app:no="17"
+                                app:symbol="Cl" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_35"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eight"
+                                app:name="Bromine"
+                                app:no="35"
+                                app:symbol="Br" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_53"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eight"
+                                app:name="Iodine"
+                                app:no="53"
+                                app:symbol="I" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_85"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eight"
+                                app:name="Astatine"
+                                app:no="85"
+                                app:symbol="At" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_117"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eight"
+                                app:name="Tennessine"
+                                app:no="117"
+                                app:symbol="Ts" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:orientation="vertical">
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_2"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/nine"
+                                app:name="Helium"
+                                app:no="2"
+                                app:symbol="He" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_10"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/nine"
+                                app:name="Neon"
+                                app:no="10"
+                                app:symbol="Ne" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_18"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/nine"
+                                app:name="Argon"
+                                app:no="18"
+                                app:symbol="Ar" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_36"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/nine"
+                                app:name="Krypton"
+                                app:no="36"
+                                app:symbol="Kr" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_54"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/nine"
+                                app:name="Xenon"
+                                app:no="54"
+                                app:symbol="Xe" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_86"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/nine"
+                                app:name="Radon"
+                                app:no="86"
+                                app:symbol="Rn" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_118"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/nine"
+                                app:name="Oganesson"
+                                app:no="118"
+                                app:symbol="Og" />
+
+                        </LinearLayout>
+
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/tableLayout2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="36dp"
-                    android:layout_marginTop="8dp"
-                    android:text="  IA/1"
-                    android:textColor="@color/black"
-                    android:textSize="24dp"
+                    android:layout_marginStart="210dp"
+                    android:layout_marginTop="24sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/button2" />
+                    app:layout_constraintTop_toBottomOf="@+id/tableLayout1">
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="80dp"
-                    android:text=" IIA/2"
-                    android:textColor="@color/black"
-                    android:textSize="24dp"
-                    app:layout_constraintStart_toEndOf="@+id/butt_1"
-                    app:layout_constraintTop_toBottomOf="@+id/button2" />
+                    <TableRow>
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="887dp"
-                    android:layout_height="38dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="236dp"
-                    android:text="IIIB/3      IIVb/4     VB/5     VIB/6    VIIB/7        8            9           10        IB/11    IIB/12"
-                    android:textColor="@color/black"
-                    android:textSize="24dp"
-                    app:layout_constraintEnd_toStartOf="@+id/butt_13"
-                    app:layout_constraintStart_toEndOf="@+id/butt_12"
-                    app:layout_constraintTop_toBottomOf="@+id/button2" />
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_58"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Cerium"
+                                app:no="58"
+                                app:symbol="Ce" />
 
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="435dp"
-                    android:layout_height="32dp"
-                    android:layout_marginTop="84dp"
-                    android:text="IIIA/13   IV/14    VA/15   VIA/16  VIIA/17"
-                    android:textColor="@color/black"
-                    android:textSize="24dp"
-                    app:layout_constraintEnd_toStartOf="@+id/butt_2"
-                    app:layout_constraintTop_toBottomOf="@+id/button2" />
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_59"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Praseodymium"
+                                app:no="59"
+                                app:symbol="Pr" />
 
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="42dp"
-                    android:text="O/18"
-                    android:textColor="@color/black"
-                    android:textSize="24dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/button2" />
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_60"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Neodymium"
+                                app:no="60"
+                                app:symbol="Nd" />
 
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="165dp"
-                    android:layout_height="27dp"
-                    android:text="----------VIII-----------"
-                    android:textColor="@color/black"
-                    android:textSize="24dp"
-                    app:layout_constraintBottom_toTopOf="@+id/textView4"
-                    app:layout_constraintEnd_toStartOf="@+id/butt_5"
-                    app:layout_constraintHorizontal_bias="0.683"
-                    app:layout_constraintStart_toEndOf="@+id/butt_4"
-                    app:layout_constraintTop_toBottomOf="@+id/button2"
-                    app:layout_constraintVertical_bias="0.913" />
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_61"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Promethium"
+                                app:no="61"
+                                app:symbol="Pm" />
 
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_62"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Samarium"
+                                app:no="62"
+                                app:symbol="Sm" />
 
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_63"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Europium"
+                                app:no="63"
+                                app:symbol="Eu" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_64"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Gadolinium"
+                                app:no="64"
+                                app:symbol="Gd" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_65"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Terbium"
+                                app:no="65"
+                                app:symbol="Tb" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_66"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Dysprosium"
+                                app:no="66"
+                                app:symbol="Dy" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_67"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Holmium"
+                                app:no="67"
+                                app:symbol="Ho" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_68"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Erbium"
+                                app:no="68"
+                                app:symbol="Er" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_69"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Thulium"
+                                app:no="69"
+                                app:symbol="Tm" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_70"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Ytterbium"
+                                app:no="70"
+                                app:symbol="Yb" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_71"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Lutetium"
+                                app:no="71"
+                                app:symbol="Lu" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow>
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="10sp"
+                            android:orientation="horizontal">
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_90"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Thorium"
+                                app:no="90"
+                                app:symbol="Th" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_91"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Protactinium"
+                                app:no="91"
+                                app:symbol="Pa" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_92"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Uranium"
+                                app:no="92"
+                                app:symbol="U" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_93"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Neptunium"
+                                app:no="93"
+                                app:symbol="Np" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_94"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Plutonium"
+                                app:no="94"
+                                app:symbol="Pu" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_95"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Americium"
+                                app:no="95"
+                                app:symbol="Am" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_96"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Curium"
+                                app:no="96"
+                                app:symbol="Cm" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_97"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Berkelium"
+                                app:no="97"
+                                app:symbol="Bk" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_98"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Californium"
+                                app:no="98"
+                                app:symbol="Cf" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_99"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Einsteinium"
+                                app:no="99"
+                                app:symbol="Es" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_100"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Fermium"
+                                app:no="100"
+                                app:symbol="Fm" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_101"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Mendelevium"
+                                app:no="101"
+                                app:symbol="Md" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_102"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Nobelium"
+                                app:no="102"
+                                app:symbol="No" />
+
+                            <com.su.navygayion15.customtext
+                                android:id="@+id/cut_103"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Lawrencium"
+                                app:no="103"
+                                app:symbol="Lr" />
+                        </LinearLayout>
+                    </TableRow>
+
+                </TableLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </HorizontalScrollView>
+
     </ScrollView>
 </FrameLayout>
