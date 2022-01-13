@@ -1137,7 +1137,7 @@
                     android:id="@+id/tableLayout2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="210dp"
+                    android:layout_marginStart="210sp"
                     android:layout_marginTop="24sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tableLayout1">
