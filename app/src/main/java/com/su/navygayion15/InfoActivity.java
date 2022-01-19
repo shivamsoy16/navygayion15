@@ -25,11 +25,16 @@ public class InfoActivity extends AppCompatActivity {
         ImageView bar_search = findViewById(R.id.search_bar);
         ImageView bar_setting = findViewById(R.id.setting_bar);
         ImageView wiki = findViewById(R.id.wiki);
+        String[] urls = Elements.getUrls();
+        String[][] config = Elements.getConfig();
+        int igi = 0;
+        igi = (int) Elements.getCos();
 
+        int finalIgi = igi - 1;
         wiki.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse("http://www.google.com"); // missing 'http://' will cause crashed
+                Uri uri = Uri.parse(urls[finalIgi]); // missing 'http://' will cause crashed
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }
@@ -48,8 +53,7 @@ public class InfoActivity extends AppCompatActivity {
             }
         });
         bar_tittle.setText("Elements' Info");
-        int igi = 0;
-        igi = (int) Elements.getCos();
+
         String ig3 = String.valueOf(igi);
         String[][] ele = Elements.getSubjects();
         TextView ssd = findViewById(R.id.textView);
@@ -71,6 +75,10 @@ public class InfoActivity extends AppCompatActivity {
         TextView ssid16 = (TextView) findViewById (R.id.conductivity);
         TextView ssid17 = (TextView) findViewById (R.id.hardness);
         TextView ssid18 = (TextView) findViewById (R.id.modulus);
+        TextView ssid19 = (TextView) findViewById (R.id.electron);
+        TextView ssid20 = (TextView) findViewById (R.id.proton);
+        TextView ssid21 = (TextView) findViewById (R.id.neutron);
+        TextView ssid22 = (TextView) findViewById (R.id.config);
 
 
         int value = igi-1;
@@ -95,6 +103,10 @@ public class InfoActivity extends AppCompatActivity {
             ssid16.setText(ele[value][15]);
             ssid17.setText(ele[value][16]);
             ssid18.setText(ele[value][17]);
+            ssid19.setText(config[value][0]);
+            ssid20.setText(config[value][1]);
+            ssid21.setText(config[value][2]);
+            ssid22.setText(config[value][3]);
 
 
 

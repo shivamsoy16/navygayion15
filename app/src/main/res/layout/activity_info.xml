@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     tools:context=".InfoActivity">
 
@@ -37,7 +37,7 @@
 
     <ScrollView
         android:id="@+id/scrollView3"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="80dp"
         android:paddingBottom="50sp"
@@ -47,6 +47,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.0">
 
+
         <HorizontalScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,10 +55,26 @@
             android:textAlignment="center">
 
             <TableLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="32sp"
+                android:layout_marginRight="32sp"
                 android:layout_marginTop="18sp">
+                <TableRow
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:background="@color/purple_700">
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Overview"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="24sp"
+                        android:fontFamily="@font/merri"
+                        android:textColor="@color/black"/>
+                    
+                </TableRow>
 
                 <TableRow
                     android:paddingTop="10sp"
@@ -65,7 +82,7 @@
 
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
@@ -73,7 +90,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                            android:paddingRight="82sp"
+                              
                             android:text="Atomic Number"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
@@ -95,7 +112,7 @@
                     android:paddingBottom="10sp">>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
@@ -103,7 +120,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                            android:paddingRight="82sp"
+                              
                             android:text="Symbol"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
@@ -127,7 +144,7 @@
                     android:paddingBottom="10sp">>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
@@ -135,7 +152,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                            android:paddingRight="82sp"
+                              
                             android:text="Element's Name"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
@@ -159,7 +176,7 @@
                     android:paddingBottom="10sp">>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
@@ -167,7 +184,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                            android:paddingRight="82sp"
+                              
                             android:text="Mass"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
@@ -191,7 +208,7 @@
                     android:paddingBottom="10sp">>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
@@ -199,7 +216,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                            android:paddingRight="82sp"
+                              
                             android:text="Valence"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
@@ -223,7 +240,7 @@
                     android:paddingBottom="10sp">>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
@@ -231,7 +248,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                            android:paddingRight="82sp"
+                              
                             android:text="Discovered in"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
@@ -254,7 +271,7 @@
                     android:paddingBottom="10sp">>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
@@ -262,7 +279,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                            android:paddingRight="82sp"
+                              
                             android:text="State"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
@@ -279,13 +296,27 @@
                     </LinearLayout>
 
                 </TableRow>
+                <TableRow
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:background="@color/purple_700">
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Properties"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="24sp"
+                        android:fontFamily="@font/merri"
+                        android:textColor="@color/black"/>
+
+                </TableRow>
                 <TableRow
                     android:paddingTop="10sp"
                     android:paddingBottom="10sp">>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
@@ -293,7 +324,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                            android:paddingRight="82sp"
+                              
                             android:text="Melting Point (in deg. Celsius)"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
@@ -316,7 +347,7 @@
                     android:paddingBottom="10sp">>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
@@ -324,7 +355,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                            android:paddingRight="82sp"
+                              
                             android:text="Boiling Point (in deg. Celsius)"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
@@ -347,7 +378,7 @@
                     android:paddingBottom="10sp">>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
@@ -355,7 +386,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                            android:paddingRight="82sp"
+                              
                             android:text="Conductivity"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
@@ -378,7 +409,7 @@
                     android:paddingBottom="10sp">>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
@@ -386,7 +417,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                            android:paddingRight="82sp"
+                              
                             android:text="Hardness"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
@@ -403,13 +434,13 @@
                     </LinearLayout>
 
                 </TableRow>
-
+                
                 <TableRow
                     android:paddingTop="10sp"
                     android:paddingBottom="10sp">>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
@@ -417,7 +448,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                            android:paddingRight="82sp"
+                              
                             android:text="Modulus"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
@@ -434,13 +465,77 @@
                     </LinearLayout>
 
                 </TableRow>
-
                 <TableRow
                     android:paddingTop="10sp"
-                    android:paddingBottom="10sp">>
+                    android:paddingBottom="10sp"
+                    android:background="@color/purple_700">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Atomic Properties"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="24sp"
+                        android:fontFamily="@font/merri"
+                        android:textColor="@color/black"/>
+
+                </TableRow>
+                <TableLayout>
+                <TableRow
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:layout_width="22sp">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/merri"
+                            android:text="Electron"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/electron"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/merri"
+                            android:text="--"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/merri"
+                            android:text="Proton"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/proton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/merri"
+                            android:text="--"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
@@ -448,7 +543,66 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                            android:paddingRight="82sp"
+                            android:text="Neutron"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/neutron"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/merri"
+                            android:text="--"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                </TableRow>
+                </TableLayout>
+                <TableRow
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/merri"
+
+                            android:text="Electronic Configuration"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/config"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/merri"
+                            android:text="--------"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+                </TableRow>
+                <TableRow
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp">>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/merri"
+                              
                             android:text="Heat"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
@@ -471,7 +625,7 @@
                     android:paddingBottom="10sp">>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
@@ -479,7 +633,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                            android:paddingRight="82sp"
+                              
                             android:text="Density"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
@@ -502,7 +656,7 @@
                     android:paddingBottom="10sp">>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
@@ -510,7 +664,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                            android:paddingRight="82sp"
+                              
                             android:text="Atomic Radius"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
@@ -533,7 +687,7 @@
                     android:paddingBottom="10sp">>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
@@ -541,7 +695,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                            android:paddingRight="82sp"
+                              
                             android:text="Ionization"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
@@ -564,7 +718,7 @@
                     android:paddingBottom="10sp">>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
@@ -572,7 +726,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                            android:paddingRight="82sp"
+                              
                             android:text="Electron Negativity"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
@@ -595,7 +749,7 @@
                     android:paddingBottom="10sp">>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
@@ -603,7 +757,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                            android:paddingRight="82sp"
+                              
                             android:text="Electron Affinity"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
