@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Navygayion15">
         <activity
+            android:name=".SearchActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_settings" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -20,8 +29,7 @@
         </activity> <!-- OR Other activities like this And  intent filter is not necessary in other activites -->
         <activity
             android:name=".InfoActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

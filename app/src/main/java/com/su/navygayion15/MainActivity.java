@@ -2,6 +2,7 @@ package com.su.navygayion15;
 
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -38,6 +39,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "Click Search Icon.", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, SearchActivity.class);
+                        startActivity(intent);
             }
         });
         bar_setting.setOnClickListener(new View.OnClickListener() {
