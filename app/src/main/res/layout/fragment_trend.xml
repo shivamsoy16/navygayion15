@@ -5,12 +5,16 @@
     android:id="@+id/layoutfrag"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".fragment.TrendFragment">
+    tools:context=".fragment.TrendFragment"
+    android:tag="trendfragment">
 
-    <com.github.mikephil.charting.charts.LineChart
-        android:id="@+id/linechart"
-        android:layout_width="match_parent"
-        android:layout_height="400sp" />
-
+    <com.su.navygayion15.trend
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:trendtext = "Size"
+        app:trendgrp = "Group"
+        app:trendprd = "Period"
+        app:tx = "1"/>
 
 </FrameLayout>

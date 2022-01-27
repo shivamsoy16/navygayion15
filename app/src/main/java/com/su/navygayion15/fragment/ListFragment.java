@@ -26,7 +26,9 @@ import com.su.navygayion15.R;
  */
 public class ListFragment extends Fragment implements View.OnClickListener {
 
+/*
     String[][] ele = Elements.getSubjects();
+*/
     public int igg = 0;
 
 
@@ -92,7 +94,7 @@ public class ListFragment extends Fragment implements View.OnClickListener {
                     "fonts/merri.ttf");
             // Make TV to hold the details
             TextView tv = new TextView(getActivity());
-            tv.setText(ele[i][0]);
+            tv.setText(Elements.subjects[i][0]);
             tv.setTextColor(Color.BLACK);
             tv.setPadding(10, 5, 10, 5);
             tv.setTextSize(21);
@@ -103,7 +105,7 @@ public class ListFragment extends Fragment implements View.OnClickListener {
             // Make TV to hold the detailvals
 
             TextView tv1 = new TextView(getActivity());
-            tv1.setText(ele[i][1]);
+            tv1.setText(Elements.subjects[i][1]);
             tv1.setTextColor(Color.BLACK);
             tv1.setPadding(10, 5, 10, 5);
             tv1.setTextSize(21);
@@ -112,7 +114,7 @@ public class ListFragment extends Fragment implements View.OnClickListener {
             tr.addView(tv1);
 
             TextView tv2 = new TextView(getActivity());
-            tv2.setText(ele[i][2]);
+            tv2.setText(Elements.subjects[i][2]);
             tv2.setTextColor(Color.BLACK);
             tv2.setPadding(10, 5, 10, 5);
             tv2.setTextSize(21);

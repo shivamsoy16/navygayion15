@@ -9,4 +9,13 @@
 
     </declare-styleable>
 
+    <declare-styleable name="trendattrs">
+
+        <attr name="trendtext"  format = "string"/>
+        <attr name="trendgrp"   format = "string"/>
+        <attr name="trendprd"   format="string"/>
+        <attr name="tx"     format ="integer"/>
+
+    </declare-styleable>
+
 </resources>

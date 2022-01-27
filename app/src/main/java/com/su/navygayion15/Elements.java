@@ -5,6 +5,9 @@ import androidx.annotation.Nullable;
 
 public class Elements {
 
+    public static int trendx = 0;
+    public static int trendy = 0;
+
     public static double cos = 0;
 
     public static double getCos() {

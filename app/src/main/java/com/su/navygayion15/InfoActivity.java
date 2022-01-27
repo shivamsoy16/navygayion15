@@ -26,7 +26,6 @@ public class InfoActivity extends AppCompatActivity {
         ImageView bar_setting = findViewById(R.id.setting_bar);
         ImageView wiki = findViewById(R.id.wiki);
         String[] urls = Elements.getUrls();
-        String[][] config = Elements.getConfig();
         int igi = 0;
         igi = (int) Elements.getCos();
 
@@ -55,7 +54,6 @@ public class InfoActivity extends AppCompatActivity {
         bar_tittle.setText("Elements' Info");
 
         String ig3 = String.valueOf(igi);
-        String[][] ele = Elements.getSubjects();
         TextView ssd = findViewById(R.id.textView);
         TextView ssid = (TextView) findViewById (R.id.number);
         TextView ssid2 = (TextView) findViewById (R.id.symbol);
@@ -84,29 +82,29 @@ public class InfoActivity extends AppCompatActivity {
         int value = igi-1;
         /*ssid.setText(ig3);
         ssid2.setText(ele[value][1]);*/
-            ssd.setText(ele[value][2]);
+            ssd.setText(Elements.subjects[value][2]);
             ssid.setText(ig3);
-            ssid2.setText(ele[value][1]);
-            ssid3.setText(ele[value][2]);
-            ssid4.setText(ele[value][3]);
-            ssid5.setText(ele[value][4]);
-            ssid6.setText(ele[value][5]);
-            ssid7.setText(ele[value][6]);
-            ssid8.setText(ele[value][7]);
-            ssid9.setText(ele[value][8]);
-            ssid10.setText(ele[value][9]);
-            ssid11.setText(ele[value][10]);
-            ssid12.setText(ele[value][11]);
-            ssid13.setText(ele[value][12]);
-            ssid14.setText(ele[value][13]);
-            ssid15.setText(ele[value][14]);
-            ssid16.setText(ele[value][15]);
-            ssid17.setText(ele[value][16]);
-            ssid18.setText(ele[value][17]);
-            ssid19.setText(config[value][0]);
-            ssid20.setText(config[value][1]);
-            ssid21.setText(config[value][2]);
-            ssid22.setText(config[value][3]);
+            ssid2.setText(Elements.subjects[value][1]);
+            ssid3.setText(Elements.subjects[value][2]);
+            ssid4.setText(Elements.subjects[value][3]);
+            ssid5.setText(Elements.subjects[value][4]);
+            ssid6.setText(Elements.subjects[value][5]);
+            ssid7.setText(Elements.subjects[value][6]);
+            ssid8.setText(Elements.subjects[value][7]);
+            ssid9.setText(Elements.subjects[value][8]);
+            ssid10.setText(Elements.subjects[value][9]);
+            ssid11.setText(Elements.subjects[value][10]);
+            ssid12.setText(Elements.subjects[value][11]);
+            ssid13.setText(Elements.subjects[value][12]);
+            ssid14.setText(Elements.subjects[value][13]);
+            ssid15.setText(Elements.subjects[value][14]);
+            ssid16.setText(Elements.subjects[value][15]);
+            ssid17.setText(Elements.subjects[value][16]);
+            ssid18.setText(Elements.subjects[value][17]);
+            ssid19.setText(Elements.config[value][0]);
+            ssid20.setText(Elements.config[value][1]);
+            ssid21.setText(Elements.config[value][2]);
+            ssid22.setText(Elements.config[value][3]);
 
 
 
