@@ -381,6 +381,11 @@ public class Elements {
             {"117","117","177","[Rn]5f14,6d10,7s2,7p5"},
             {"118","118","176","[Rn]5f14,6d10,7s2,7p6"}, };
 
+    public static String[][] graph = {
+            {"0.53","0.31"},
+            {"1.67","1.12","0.87","0.67","0.56","0.48","0.42","0.38"},
+    };
+
     public static String[][] getConfig() {
         return config;
     }

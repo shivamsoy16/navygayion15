@@ -24,27 +24,27 @@
                 android:id="@+id/tv1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
                 android:text="At. No"
-                android:textSize="22dp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/tv2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingLeft="40dp"
-                android:paddingRight="40dp"
+                android:paddingLeft="10sp"
+                android:paddingRight="30sp"
                 android:text="Symbol"
-                android:textSize="22dp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/tv3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingRight="20dp"
+                android:paddingRight="20sp"
                 android:text="Element"
-                android:textSize="22dp" />
+                android:textSize="22sp" />
 
         </TableRow>
 
@@ -62,9 +62,10 @@
 
         <TableLayout
             android:id="@+id/table_n"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="20sp">
+<!--
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -74,29 +75,29 @@
                     android:id="@+id/tvv1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="20sp"
                     android:text="At. No"
-                    android:textSize="22dp" />
+                    android:textSize="22sp" />
 
                 <TextView
                     android:id="@+id/tvv2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingLeft="40dp"
-                    android:paddingRight="40dp"
+                    android:paddingLeft="40sp"
+                    android:paddingRight="40sp"
                     android:text="Symbol"
-                    android:textSize="22dp" />
+                    android:textSize="22sp" />
 
                 <TextView
                     android:id="@+id/tvv3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingRight="20dp"
+                    android:paddingRight="20sp"
                     android:text="Element"
-                    android:textSize="22dp" />
+                    android:textSize="22sp" />
 
-            </TableRow>
+            </TableRow>-->
         </TableLayout>
 
     </ScrollView>

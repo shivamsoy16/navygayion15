@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".InfoActivity">
 
@@ -51,7 +51,7 @@
         <HorizontalScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingBottom="120sp"
+            android:paddingBottom="118sp"
             android:textAlignment="center">
 
             <TableLayout
@@ -59,21 +59,23 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="32sp"
                 android:layout_marginRight="32sp"
-                android:layout_marginTop="18sp">
+                android:layout_marginTop="16sp">
+
                 <TableRow
+                    android:layout_height="31dp"
+                    android:background="@color/purple_700"
                     android:paddingTop="10sp"
-                    android:paddingBottom="10sp"
-                    android:background="@color/purple_700">
-                    
+                    android:paddingBottom="10sp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Overview"
                         android:layout_gravity="center_horizontal"
-                        android:textSize="24sp"
                         android:fontFamily="@font/merri"
-                        android:textColor="@color/black"/>
-                    
+                        android:text="Overview"
+                        android:textColor="@color/black"
+                        android:textSize="21sp" />
+
                 </TableRow>
 
                 <TableRow
@@ -93,7 +95,7 @@
                               
                             android:text="Atomic Number"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/number"
@@ -102,7 +104,7 @@
                             android:fontFamily="@font/merri"
                             android:text="Number"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
                 </TableRow>
@@ -123,7 +125,7 @@
                               
                             android:text="Symbol"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/symbol"
@@ -132,7 +134,7 @@
                             android:fontFamily="@font/merri"
                             android:text="Symbol"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
 
@@ -155,7 +157,7 @@
                               
                             android:text="Element's Name"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/name"
@@ -164,7 +166,7 @@
                             android:fontFamily="@font/merri"
                             android:text="Name"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
 
@@ -187,7 +189,7 @@
                               
                             android:text="Mass"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/mass"
@@ -196,7 +198,7 @@
                             android:fontFamily="@font/merri"
                             android:text="--------"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
 
@@ -219,7 +221,7 @@
                               
                             android:text="Valence"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/valence"
@@ -228,7 +230,7 @@
                             android:fontFamily="@font/merri"
                             android:text="--------"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
 
@@ -251,7 +253,7 @@
                               
                             android:text="Discovered in"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/discovered"
@@ -260,7 +262,7 @@
                             android:fontFamily="@font/merri"
                             android:text="--------"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
 
@@ -282,7 +284,7 @@
                               
                             android:text="State"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/state"
@@ -291,7 +293,7 @@
                             android:fontFamily="@font/merri"
                             android:text="--------"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
 
@@ -327,7 +329,7 @@
                               
                             android:text="Melting Point (in deg. Celsius)"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/melting"
@@ -336,7 +338,7 @@
                             android:fontFamily="@font/merri"
                             android:text="--------="
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
 
@@ -358,7 +360,7 @@
                               
                             android:text="Boiling Point (in deg. Celsius)"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/boiling"
@@ -367,7 +369,7 @@
                             android:fontFamily="@font/merri"
                             android:text="--------"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
 
@@ -389,7 +391,7 @@
                               
                             android:text="Conductivity"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/conductivity"
@@ -398,7 +400,7 @@
                             android:fontFamily="@font/merri"
                             android:text="--------"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
 
@@ -420,7 +422,7 @@
                               
                             android:text="Hardness"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/hardness"
@@ -429,7 +431,7 @@
                             android:fontFamily="@font/merri"
                             android:text="--------"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
 
@@ -451,7 +453,7 @@
                               
                             android:text="Modulus"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/modulus"
@@ -460,7 +462,7 @@
                             android:fontFamily="@font/merri"
                             android:text="--------"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
 
@@ -498,7 +500,7 @@
                             android:fontFamily="@font/merri"
                             android:text="Electron"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/electron"
@@ -507,7 +509,7 @@
                             android:fontFamily="@font/merri"
                             android:text="--"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
                     <LinearLayout
@@ -522,7 +524,7 @@
                             android:fontFamily="@font/merri"
                             android:text="Proton"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/proton"
@@ -531,7 +533,7 @@
                             android:fontFamily="@font/merri"
                             android:text="--"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
                     <LinearLayout
@@ -545,7 +547,7 @@
                             android:fontFamily="@font/merri"
                             android:text="Neutron"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/neutron"
@@ -554,7 +556,7 @@
                             android:fontFamily="@font/merri"
                             android:text="--"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
 
@@ -576,7 +578,7 @@
 
                             android:text="Electronic Configuration"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/config"
@@ -585,7 +587,7 @@
                             android:fontFamily="@font/merri"
                             android:text="--------"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
                 </TableRow>
@@ -605,7 +607,7 @@
                               
                             android:text="Heat"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/heat"
@@ -614,7 +616,7 @@
                             android:fontFamily="@font/merri"
                             android:text="--------"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
 
@@ -636,7 +638,7 @@
                               
                             android:text="Density"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/density"
@@ -645,7 +647,7 @@
                             android:fontFamily="@font/merri"
                             android:text="--------"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
 
@@ -667,7 +669,7 @@
                               
                             android:text="Atomic Radius"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/radius"
@@ -676,7 +678,7 @@
                             android:fontFamily="@font/merri"
                             android:text="--------"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
 
@@ -698,7 +700,7 @@
                               
                             android:text="Ionization"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/ionization"
@@ -707,7 +709,7 @@
                             android:fontFamily="@font/merri"
                             android:text="--------"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
 
@@ -729,7 +731,7 @@
                               
                             android:text="Electron Negativity"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/electronegativity"
@@ -738,7 +740,7 @@
                             android:fontFamily="@font/merri"
                             android:text="--------"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
 
@@ -760,7 +762,7 @@
                               
                             android:text="Electron Affinity"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/electroaffinity"
@@ -769,7 +771,7 @@
                             android:fontFamily="@font/merri"
                             android:text="--------"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="16sp" />
 
                     </LinearLayout>
 

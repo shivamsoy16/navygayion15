@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/merri"
+            android:layout_marginLeft="10sp"
+            android:padding="10sp"
+            android:text="Size"
+            android:layout_gravity=""
+            android:id="@+id/trendtext"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group"
+            android:id="@+id/trendgrp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="@font/merri"
+            android:layout_marginTop="60sp"
+            android:layout_marginLeft="10sp"/>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Period"
+            android:textAllCaps="false"
+            android:id="@+id/trendprd"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/merri"
+            android:layout_marginTop="60sp"
+            android:layout_marginLeft="185sp"/>
+
+
+</FrameLayout>
