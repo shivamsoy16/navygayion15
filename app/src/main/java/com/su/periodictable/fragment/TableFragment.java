@@ -1,20 +1,19 @@
-package com.su.navygayion15.fragment;
+package com.su.periodictable.fragment;
 
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.su.navygayion15.Elements;
-import com.su.navygayion15.InfoActivity;
-import com.su.navygayion15.R;
-import com.su.navygayion15.customtext;
+import androidx.fragment.app.Fragment;
+
+import com.su.periodictable.Elements;
+import com.su.periodictable.InfoActivity;
+import com.su.periodictable.R;
+import com.su.periodictable.customtext;
 
 
 /**
@@ -25,7 +24,37 @@ import com.su.navygayion15.customtext;
 public class TableFragment extends Fragment implements View.OnClickListener {
 
 
-    public void otab1(View v){
+    // TODO: Rename parameter arguments, choose names that match
+    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
+    // TODO: Rename and change types of parameters
+    private String mParam1;
+    private String mParam2;
+    public TableFragment() {
+        // Required empty public constructor
+
+    }
+
+    /**
+     * Use this factory method to create a new instance of
+     * this fragment using the provided parameters.
+     *
+     * @param param1 Parameter 1.
+     * @param param2 Parameter 2.
+     * @return A new instance of fragment TableFragment.
+     */
+    // TODO: Rename and change types and number of parameters
+    public static TableFragment newInstance(String param1, String param2) {
+        TableFragment fragment = new TableFragment();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, param1);
+        args.putString(ARG_PARAM2, param2);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    public void otab1(View v) {
         ((customtext) v.findViewById(R.id.cut_1)).setOnClickListener(this);
         ((customtext) v.findViewById(R.id.cut_2)).setOnClickListener(this);
         ((customtext) v.findViewById(R.id.cut_3)).setOnClickListener(this);
@@ -147,40 +176,6 @@ public class TableFragment extends Fragment implements View.OnClickListener {
 
     }
 
-
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public TableFragment() {
-        // Required empty public constructor
-
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment TableFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static TableFragment newInstance(String param1, String param2) {
-        TableFragment fragment = new TableFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -211,9 +206,9 @@ public class TableFragment extends Fragment implements View.OnClickListener {
         Elements.cos = Integer.parseInt(part1[1]);
         int igg1 = (int) Elements.cos;
         String[][] ele = Elements.getSubjects();
-        if (igg1<=118)
-            Toast.makeText(getActivity(), "Clicked on Button:- "+goo1+"  or  "+
-                    idString+" "+part1[0]+" and "+igg1+" "+ele[igg1-1][2], Toast.LENGTH_SHORT).show();
+        if (igg1 <= 118)
+            Toast.makeText(getActivity(), "Clicked on Button:- " + goo1 + "  or  " +
+                    idString + " " + part1[0] + " and " + igg1 + " " + ele[igg1 - 1][2], Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(getActivity(), InfoActivity.class);
         startActivity(intent);
 

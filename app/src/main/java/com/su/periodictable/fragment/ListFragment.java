@@ -1,10 +1,9 @@
-package com.su.navygayion15.fragment;
+package com.su.periodictable.fragment;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,9 +14,9 @@ import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
-import com.su.navygayion15.Elements;
-import com.su.navygayion15.InfoActivity;
-import com.su.navygayion15.R;
+import com.su.periodictable.Elements;
+import com.su.periodictable.InfoActivity;
+import com.su.periodictable.R;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -26,17 +25,14 @@ import com.su.navygayion15.R;
  */
 public class ListFragment extends Fragment implements View.OnClickListener {
 
-/*
-    String[][] ele = Elements.getSubjects();
-*/
-    public int igg = 0;
-
-
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
+    /*
+        String[][] ele = Elements.getSubjects();
+    */
+    public int igg = 0;
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
@@ -84,7 +80,7 @@ public class ListFragment extends Fragment implements View.OnClickListener {
 
         TableLayout tl = (TableLayout) view.findViewById(R.id.table_n);
 
-        for (int i = 0; i <=117; i++) {
+        for (int i = 0; i <= 117; i++) {
             // Make TR
             TableRow tr = new TableRow(getActivity());
             tr.setId(2456 + i);

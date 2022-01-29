@@ -1,5 +1,4 @@
-
-package com.su.navygayion15;
+package com.su.periodictable;
 
 import android.content.Context;
 import android.widget.TextView;
@@ -10,7 +9,6 @@ import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.utils.MPPointF;
 import com.github.mikephil.charting.utils.Utils;
-import com.su.navygayion15.R;
 
 
 /**
@@ -20,7 +18,7 @@ import com.su.navygayion15.R;
  */
 public class MyMarkerView extends MarkerView {
 
-    private TextView tvContent;
+    private final TextView tvContent;
 
     public MyMarkerView(Context context, int layoutResource) {
         super(context, layoutResource);

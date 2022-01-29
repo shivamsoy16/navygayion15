@@ -1,7 +1,6 @@
-package com.su.navygayion15;
+package com.su.periodictable;
 
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -9,17 +8,19 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.su.navygayion15.fragment.ListFragment;
-import com.su.navygayion15.fragment.TableFragment;
-import com.su.navygayion15.fragment.TrendFragment;
+import com.su.periodictable.fragment.ListFragment;
+import com.su.periodictable.fragment.TableFragment;
+import com.su.periodictable.fragment.TrendFragment;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-;
+    ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "Click Search Icon.", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, SearchActivity.class);
-                        startActivity(intent);
+                startActivity(intent);
             }
         });
         bar_setting.setOnClickListener(new View.OnClickListener() {
@@ -107,9 +108,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId() == R.id.nav_search){
-        }
-        else if (item.getItemId() == R.id.nav_settings){
+        if (item.getItemId() == R.id.nav_search) {
+        } else if (item.getItemId() == R.id.nav_settings) {
             Toast.makeText(this, "Clicked Settings Icon..", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);

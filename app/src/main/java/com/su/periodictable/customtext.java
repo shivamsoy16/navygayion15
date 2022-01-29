@@ -1,10 +1,8 @@
-package com.su.navygayion15;
+package com.su.periodictable;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
-import android.view.KeyEvent;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,13 +20,10 @@ public class customtext extends ConstraintLayout {
     private OnClickListener listener;
 
 
-
-
-
     public customtext(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        inflate(context, R.layout.custom_text,this);
-        attributes  = context.obtainStyledAttributes(attrs, R.styleable.customtext);
+        inflate(context, R.layout.custom_text, this);
+        attributes = context.obtainStyledAttributes(attrs, R.styleable.customtext);
         name = findViewById(R.id.ct_name);
         no = findViewById(R.id.ct_no);
         symbol = findViewById(R.id.ct_symbol);
@@ -46,12 +41,12 @@ public class customtext extends ConstraintLayout {
         name.setText(string);
     }
 
-    private void setNo(String string) {
-        no.setText(string);
-    }
-
     public TextView getNo() {
         return no;
+    }
+
+    private void setNo(String string) {
+        no.setText(string);
     }
 
     private void init() {
@@ -63,8 +58,6 @@ public class customtext extends ConstraintLayout {
         });
 
     }
-
-
 
 
 }

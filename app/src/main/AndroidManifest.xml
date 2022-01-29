@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.su.navygayion15">
+    package="com.su.periodictable">
 
     <application
         android:allowBackup="true"
@@ -10,19 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Navygayion15">
         <activity
-            android:name=".GraphActivity"
+            android:name="com.su.periodictable.GraphActivity"
             android:exported="false" />
         <activity
-            android:name=".SearchActivity"
+            android:name="com.su.periodictable.SearchActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="com.su.periodictable.MainActivity"
             android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
         <activity
-            android:name=".SettingsActivity"
+            android:name="com.su.periodictable.SettingsActivity"
             android:exported="false"
             android:label="@string/title_activity_settings" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.su.periodictable.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,7 +31,7 @@
             </intent-filter>
         </activity> <!-- OR Other activities like this And  intent filter is not necessary in other activites -->
         <activity
-            android:name=".InfoActivity"
+            android:name="com.su.periodictable.InfoActivity"
             android:exported="true" />
     </application>
 

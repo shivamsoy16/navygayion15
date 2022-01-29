@@ -1,4 +1,4 @@
-package com.su.navygayion15;
+package com.su.periodictable;
 
 import org.junit.Test;
 

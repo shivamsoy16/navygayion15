@@ -1,37 +1,24 @@
-package com.su.navygayion15;
+package com.su.periodictable;
 
-import static com.su.navygayion15.R.menu.search_menu;
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.ListView;
+import android.widget.SearchView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.content.res.Resources;
-import android.os.Bundle;
-import android.text.TextUtils;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.SearchView;
-import android.widget.Toast;
-
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class SearchActivity extends AppCompatActivity {
 
-    ListView listView;
-    Listviewadapter adapter;
     public static String[] name;
     public String[] symbol;
     public String[] no;
+    ListView listView;
+    Listviewadapter adapter;
     ArrayList<Model> arrayList = new ArrayList<Model>();
 
     @Override
@@ -43,7 +30,7 @@ public class SearchActivity extends AppCompatActivity {
         no = new String[118];
         symbol = new String[118];
 
-        for(int i = 0; i<118; i++){
+        for (int i = 0; i < 118; i++) {
             no[i] = Elements.subjects[i][0];
             name[i] = Elements.subjects[i][2];
             symbol[i] = Elements.subjects[i][1];
@@ -51,16 +38,16 @@ public class SearchActivity extends AppCompatActivity {
 
         listView = findViewById(R.id.search_element);
 
-        for (int i = 0; i<name.length; i++){
+        for (int i = 0; i < name.length; i++) {
 
-            Model model = new Model (no[i],symbol[i],name[i]);
+            Model model = new Model(no[i], symbol[i], name[i]);
             //bind all strings in o=ne array
             arrayList.add(model);
 
         }
 
         //pass results to listviewadapter class
-        adapter = new Listviewadapter(this,arrayList);
+        adapter = new Listviewadapter(this, arrayList);
 
         //bind the adapter to the listview
         listView.setAdapter(adapter);
@@ -82,10 +69,10 @@ public class SearchActivity extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String s) {
-                if (TextUtils.isEmpty(s)){
+                if (TextUtils.isEmpty(s)) {
                     adapter.filter("");
                     listView.clearTextFilter();
-                }else{
+                } else {
                     adapter.filter(s);
                 }
                 return true;
@@ -97,7 +84,6 @@ public class SearchActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-
 
 
         return super.onOptionsItemSelected(item);

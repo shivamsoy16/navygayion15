@@ -1,12 +1,12 @@
-package com.su.navygayion15;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
+package com.su.periodictable;
 
 import android.graphics.Color;
 import android.graphics.DashPathEffect;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.LimitLine;
@@ -22,11 +22,13 @@ import java.util.ArrayList;
 
 public class GraphActivity extends AppCompatActivity {
 
+    public int[] graphy;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_graph);
-
+        getData();
         LineChart mChart;
         mChart = findViewById(R.id.linechart);
         mChart.setTouchEnabled(true);
@@ -46,7 +48,7 @@ public class GraphActivity extends AppCompatActivity {
         llXAxis.setTextSize(10f);
         XAxis xAxis = mChart.getXAxis();
         xAxis.enableGridDashedLine(10f, 10f, 0f);
-        xAxis.setAxisMaximum(10f);
+        xAxis.setAxisMaximum(18f);
         xAxis.setAxisMinimum(0f);
         xAxis.setDrawLimitLinesBehindData(true);
         LimitLine ll1 = new LimitLine(53f, "Maximum Limit");
@@ -79,8 +81,9 @@ public class GraphActivity extends AppCompatActivity {
     private void setData(LineChart mChart) {
 
         ArrayList<Entry> values = new ArrayList<>();
-        values.add(new Entry(1, 53));
-        values.add(new Entry(2, 31));
+        for (int i = 0;i<graphy.length;i++) {
+            values.add(new Entry(i+1, graphy[i]));
+        }
 /*        values.add(new Entry(3, 80));
         values.add(new Entry(4, 120));
         values.add(new Entry(5, 110));
@@ -122,6 +125,29 @@ public class GraphActivity extends AppCompatActivity {
             LineData data = new LineData(dataSets);
             mChart.setData(data);
         }
+    }
+
+    public void getData(){
+        int size = 0;
+        if(Elements.trendx.equals("Size")) {
+            if (Elements.trendy == 2) {
+                size = Elements.graphSizeprd[Elements.trendz].length;
+                int[] graph = new int[size];
+                for (int i = 0; i < size; i++) {
+                    graph[i] = Elements.graphSizeprd[Elements.trendz][i];
+                }
+                graphy = graph;
+            }else if(Elements.trendy == 1){
+                size = Elements.graphSizegrp[Elements.trendz].length;
+                int[] graph = new int[size];
+                for (int i = 0; i < size; i++) {
+                    graph[i] = Elements.graphSizegrp[Elements.trendz][i];
+                }
+                graphy = graph;
+
+            }
+        }
+
     }
 
 }

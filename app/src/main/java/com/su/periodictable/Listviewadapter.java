@@ -1,4 +1,4 @@
-package com.su.navygayion15;
+package com.su.periodictable;
 
 import android.content.Context;
 import android.content.Intent;
@@ -31,10 +31,6 @@ public class Listviewadapter extends BaseAdapter {
         this.arrayList.addAll(modelList);
     }
 
-    public class ViewHolder{
-        TextView mNoTv, mSymbolTv, mNameTv;
-    }
-
     @Override
     public int getCount() {
         return modelList.size();
@@ -53,9 +49,9 @@ public class Listviewadapter extends BaseAdapter {
     @Override
     public View getView(int position, View view, ViewGroup parent) {
         ViewHolder holder;
-        if (view==null){
+        if (view == null) {
             holder = new ViewHolder();
-            view = inflater.inflate(R.layout.list_row,null);
+            view = inflater.inflate(R.layout.list_row, null);
 
             //locate the views in row xml
             holder.mNoTv = view.findViewById(R.id.row_no);
@@ -64,10 +60,9 @@ public class Listviewadapter extends BaseAdapter {
 
             view.setTag(holder);
 
-        }
-        else {
+        } else {
 
-            holder = (ViewHolder)view.getTag();
+            holder = (ViewHolder) view.getTag();
 
         }
 
@@ -83,10 +78,10 @@ public class Listviewadapter extends BaseAdapter {
             public void onClick(View view) {
                 //code later
                 int index = -1;
-                for (int i=0;i<118;i++) {
+                for (int i = 0; i < 118; i++) {
                     if (modelList.get(position).getName().equals(SearchActivity.name[i])) {
                         index = i;
-                        Elements.cos = i+1;
+                        Elements.cos = i + 1;
                         Intent intent = new Intent(mcontext, InfoActivity.class);
                         mcontext.startActivity(intent);
                         break;
@@ -117,20 +112,23 @@ public class Listviewadapter extends BaseAdapter {
     }
 
     //filter
-    public void filter(String charText){
+    public void filter(String charText) {
         charText = charText.toLowerCase(Locale.getDefault());
         modelList.clear();
-        if (charText.length()==0) {
+        if (charText.length() == 0) {
             modelList.addAll(arrayList);
-        }
-        else{
-            for (Model model : arrayList){
+        } else {
+            for (Model model : arrayList) {
                 if (model.getName().toLowerCase(Locale.getDefault())
-                    .contains(charText)){
+                        .contains(charText)) {
                     modelList.add(model);
                 }
             }
         }
         notifyDataSetChanged();
+    }
+
+    public class ViewHolder {
+        TextView mNoTv, mSymbolTv, mNameTv;
     }
 }

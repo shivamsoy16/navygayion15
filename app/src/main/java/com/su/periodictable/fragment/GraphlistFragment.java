@@ -1,12 +1,9 @@
-package com.su.navygayion15.fragment;
+package com.su.periodictable.fragment;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,10 +13,11 @@ import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.su.navygayion15.Elements;
-import com.su.navygayion15.GraphActivity;
-import com.su.navygayion15.InfoActivity;
-import com.su.navygayion15.R;
+import androidx.fragment.app.Fragment;
+
+import com.su.periodictable.Elements;
+import com.su.periodictable.GraphActivity;
+import com.su.periodictable.R;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -28,6 +26,10 @@ import com.su.navygayion15.R;
  */
 public class GraphlistFragment extends Fragment implements View.OnClickListener {
 
+    // TODO: Rename parameter arguments, choose names that match
+    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
     String[] grp = {"Group 1",
             "Group 2",
             "Group 3",
@@ -52,15 +54,8 @@ public class GraphlistFragment extends Fragment implements View.OnClickListener 
             "Period 4",
             "Period 5",
             "Period 6",
-            "Period 7"};
-
+            "Lanthanoid Series"};
     TextView graphlisthead;
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
@@ -100,10 +95,10 @@ public class GraphlistFragment extends Fragment implements View.OnClickListener 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_graphlist, container, false);
+        View view = inflater.inflate(R.layout.fragment_graphlist, container, false);
         graphlisthead = view.findViewById(R.id.graphlisthead);
         TableLayout tl = (TableLayout) view.findViewById(R.id.table_n1);
-        if (Elements.trendy==1) {
+        if (Elements.trendy == 1) {
             graphlisthead.setText("Group wise Trends");
             for (int i = 0; i < grp.length; i++) {
                 // Make TR
@@ -117,7 +112,7 @@ public class GraphlistFragment extends Fragment implements View.OnClickListener 
                 TextView tv = new TextView(getActivity());
                 tv.setText(grp[i]);
                 tv.setTextColor(Color.BLACK);
-                tv.setPadding(10, 5, 10, 5);
+                tv.setPadding(10, 10, 10, 10);
                 tv.setTextSize(18);
                 tv.setTypeface(face);
                 tr.addView(tv);
@@ -126,12 +121,12 @@ public class GraphlistFragment extends Fragment implements View.OnClickListener 
 
                 tl.addView(tr, new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.WRAP_CONTENT));
             }
-        }else if (Elements.trendy==2){
+        } else if (Elements.trendy == 2) {
             graphlisthead.setText("Period wise Trends");
             for (int i = 0; i < prd.length; i++) {
                 // Make TR
                 TableRow tr = new TableRow(getActivity());
-                tr.setId(2132 + i);
+                tr.setId(2142 + i);
                 tr.setOnClickListener(this);
                 //tr.setLayoutParams(new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.WRAP_CONTENT));
                 Typeface face = Typeface.createFromAsset(getActivity().getAssets(),
@@ -140,7 +135,7 @@ public class GraphlistFragment extends Fragment implements View.OnClickListener 
                 TextView tv = new TextView(getActivity());
                 tv.setText(prd[i]);
                 tv.setTextColor(Color.BLACK);
-                tv.setPadding(10, 5, 10, 5);
+                tv.setPadding(10, 10, 10, 10);
                 tv.setTextSize(18);
                 tv.setGravity(Gravity.CENTER);
                 tv.setTypeface(face);
@@ -157,6 +152,10 @@ public class GraphlistFragment extends Fragment implements View.OnClickListener 
 
     @Override
     public void onClick(View view) {
+        int goo = view.getId();
+        int got = goo - 2142;
+        Elements.trendz = got;
+        Toast.makeText(getActivity(), "Clicked on Button:- " + goo + " Atm no " + Elements.trendz, Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(getActivity(), GraphActivity.class);
         startActivity(intent);
     }
