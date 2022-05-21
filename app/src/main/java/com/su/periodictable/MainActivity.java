@@ -85,6 +85,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         transaction3.commit();
                         bar_tittle.setText("Periodic Trend");
                         return true;
+                    case R.id.m_calc:
+                        Toast.makeText(MainActivity.this, "Periodic Trend", Toast.LENGTH_SHORT).show();
+                        Fragment fragment4 = new CalcFragment();
+                        androidx.fragment.app.FragmentManager fm4 = getSupportFragmentManager();
+                        androidx.fragment.app.FragmentTransaction transaction4 = fm4.beginTransaction();
+                        transaction4.replace(R.id.fragment_container, fragment4);
+                        transaction4.commit();
+                        bar_tittle.setText("Mass calculator");
+                        return true;
                 }
                 return true;
             }

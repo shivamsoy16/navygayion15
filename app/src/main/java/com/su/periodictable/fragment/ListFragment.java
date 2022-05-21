@@ -92,7 +92,7 @@ public class ListFragment extends Fragment implements View.OnClickListener {
             TextView tv = new TextView(getActivity());
             tv.setText(Elements.subjects[i][0]);
             tv.setTextColor(Color.BLACK);
-            tv.setPadding(50, 5, 60, 5);
+            tv.setPadding(50, 10, 60, 5);
             tv.setTextSize(18);
 /*
             tv.setGravity(Gravity.CENTER);
@@ -105,7 +105,7 @@ public class ListFragment extends Fragment implements View.OnClickListener {
             TextView tv1 = new TextView(getActivity());
             tv1.setText(Elements.subjects[i][1]);
             tv1.setTextColor(Color.BLACK);
-            tv1.setPadding(90, 5, 80, 5);
+            tv1.setPadding(90, 10, 80, 5);
             tv1.setTextSize(18);
             tv1.setTypeface(face);
             tr.addView(tv1);
@@ -113,7 +113,7 @@ public class ListFragment extends Fragment implements View.OnClickListener {
             TextView tv2 = new TextView(getActivity());
             tv2.setText(Elements.subjects[i][2]);
             tv2.setTextColor(Color.BLACK);
-            tv2.setPadding(140, 5, 10, 5);
+            tv2.setPadding(140, 10, 10, 5);
             tv2.setTextSize(18);
             tv2.setTypeface(face);
             tr.addView(tv2);

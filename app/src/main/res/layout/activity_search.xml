@@ -10,6 +10,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/search_element"
         android:layout_weight="1"
-        android:padding="20sp"/>
+        android:padding="31sp"/>
 
 </LinearLayout>

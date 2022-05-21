@@ -9,7 +9,12 @@
         android:title="List"
         android:icon="@drawable/ic_list"/>
     <item
+        android:id="@+id/m_calc"
+        android:title="Mass Calc"
+        android:icon="@drawable/ic_calculate"/>
+    <item
         android:id="@+id/m_trend"
         android:title="Trend"
         android:icon="@drawable/ic_trend"/>
+    
 </menu>

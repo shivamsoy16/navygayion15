@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalcFragment"
+    android:id="@+id/m_calc">
+
+
+    <EditText
+        android:id="@+id/mass_edit"
+        android:textSize="26sp"
+        android:layout_width="wrap_content"
+        android:layout_height="48sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="160sp"
+        android:hint="  Enter the Chemical Formula " />
+
+    <Button
+        android:id="@+id/mass_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220sp"
+        android:layout_gravity="center_horizontal"
+        android:text="Calculate" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mass of the Formula entered"
+        android:textSize="24sp"
+        android:id="@+id/mass_mass"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="280sp"/>
+
+
+</FrameLayout>
