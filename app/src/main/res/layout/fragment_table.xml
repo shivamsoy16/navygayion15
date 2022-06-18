@@ -709,7 +709,7 @@
                                 android:background="@color/fifth"
                                 app:name="Aluminium"
                                 app:no="13"
-                                app:symbol="Ga" />
+                                app:symbol="Al" />
 
                             <com.su.periodictable.customtext
                                 android:id="@+id/cut_31"
@@ -957,7 +957,7 @@
                                 android:background="@color/sixth"
                                 app:name="Polonium"
                                 app:no="84"
-                                app:symbol="84" />
+                                app:symbol="Po" />
 
                             <com.su.periodictable.customtext
                                 android:id="@+id/cut_116"

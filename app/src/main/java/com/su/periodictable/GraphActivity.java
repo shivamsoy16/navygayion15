@@ -4,6 +4,9 @@ import android.graphics.Color;
 import android.graphics.DashPathEffect;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -23,10 +26,12 @@ import java.util.ArrayList;
 public class GraphActivity extends AppCompatActivity {
 
     public int[] graphy;
-
+    int size=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         setContentView(R.layout.activity_graph);
         getData();
         LineChart mChart;
@@ -51,24 +56,48 @@ public class GraphActivity extends AppCompatActivity {
         xAxis.setAxisMaximum(18f);
         xAxis.setAxisMinimum(0f);
         xAxis.setDrawLimitLinesBehindData(true);
-        LimitLine ll1 = new LimitLine(53f, "Maximum Limit");
-        ll1.setLineColor(Color.BLACK);
-        ll1.setLineWidth(2f);
-        ll1.enableDashedLine(30f, 10f, 0f);
-        ll1.setLabelPosition(LimitLine.LimitLabelPosition.RIGHT_TOP);
-        ll1.setTextSize(10f);
 
-        LimitLine ll2 = new LimitLine(31f, "Minimum Limit");
-        ll2.setLineWidth(2f);
-        ll2.enableDashedLine(30f, 10f, 0f);
-        ll2.setLabelPosition(LimitLine.LimitLabelPosition.RIGHT_BOTTOM);
-        ll2.setTextSize(10f);
+
+
+
+//        LimitLine ll2 = new LimitLine(60f, "Maximum Limit");
+//        ll1.setLineColor(Color.BLACK);
+//        ll1.setLineWidth(2f);
+//        ll1.enableDashedLine(30f, 10f, 0f);
+//        ll1.setLabelPosition(LimitLine.LimitLabelPosition.RIGHT_TOP);
+//        ll1.setTextSize(10f);
+
+//        LimitLine ll2 = new LimitLine(31f, "Minimum Limit");
+//        ll2.setLineWidth(2f);
+//        ll2.enableDashedLine(30f, 10f, 0f);
+//        ll2.setLabelPosition(LimitLine.LimitLabelPosition.RIGHT_BOTTOM);
+//        ll2.setTextSize(10f);
 
         YAxis leftAxis = mChart.getAxisLeft();
         leftAxis.removeAllLimitLines();
-        leftAxis.addLimitLine(ll1);
-        leftAxis.addLimitLine(ll2);
-        leftAxis.setAxisMaximum(350f);
+        for (int i =0;i<graphy.length;i++){
+            LimitLine lli = new LimitLine(graphy[i], "Maximum Limit");
+            lli.setLineColor(Color.BLACK);
+            lli.setLineWidth(2f);
+            lli.enableDashedLine(30f, 10f, 0f);
+            lli.setLabelPosition(LimitLine.LimitLabelPosition.RIGHT_TOP);
+            lli.setTextSize(10f);
+            leftAxis.addLimitLine(lli);
+
+        }
+
+//        leftAxis.addLimitLine(ll2);
+        switch (Trenddata.trendx){
+            case 1:
+                leftAxis.setAxisMaximum(350f);
+                break;
+            case 2:
+                leftAxis.setAxisMaximum(2050f);
+                break;
+            default:
+                break;
+        }
+//        leftAxis.setAxisMaximum(2050f);
         leftAxis.setAxisMinimum(0f);
         leftAxis.enableGridDashedLine(10f, 10f, 0f);
         leftAxis.setDrawZeroLine(false);
@@ -128,26 +157,48 @@ public class GraphActivity extends AppCompatActivity {
     }
 
     public void getData(){
-        int size = 0;
-        if(Elements.trendx.equals("Size")) {
-            if (Elements.trendy == 2) {
-                size = Elements.graphSizeprd[Elements.trendz].length;
-                int[] graph = new int[size];
-                for (int i = 0; i < size; i++) {
-                    graph[i] = Elements.graphSizeprd[Elements.trendz][i];
-                }
-                graphy = graph;
-            }else if(Elements.trendy == 1){
-                size = Elements.graphSizegrp[Elements.trendz].length;
-                int[] graph = new int[size];
-                for (int i = 0; i < size; i++) {
-                    graph[i] = Elements.graphSizegrp[Elements.trendz][i];
-                }
-                graphy = graph;
 
-            }
+        switch(Trenddata.trendx){
+            case 1:
+                if(Trenddata.trendy==1){
+                    size = Trenddata.graphSizegrp[Trenddata.trendz].length;
+                    int[] graph = new int[size];
+                    for (int i = 0; i < size; i++) {
+                        graph[i] = Trenddata.graphSizegrp[Trenddata.trendz][i];
+                    }
+                    graphy = graph;
+                }else if(Trenddata.trendy==2){
+                    size = Trenddata.graphSizeprd[Trenddata.trendz].length;
+                    int[] graph = new int[size];
+                    for (int i = 0; i < size; i++) {
+                        graph[i] = Trenddata.graphSizeprd[Trenddata.trendz][i];
+                    }
+                    graphy = graph;
+                }
+                break;
+            case 2:
+                if(Trenddata.trendy==1){
+                    size = Trenddata.graphiegrp[Trenddata.trendz].length;
+                    int[] graph = new int[size];
+                    for (int i = 0; i < size; i++) {
+                        graph[i] = (int) Trenddata.graphiegrp[Trenddata.trendz][i];
+                    }
+                    graphy = graph;
+                }else if(Trenddata.trendy==2){
+                    size = Trenddata.graphieprd[Trenddata.trendz].length;
+                    int[] graph = new int[size];
+                    for (int i = 0; i < size; i++) {
+                        graph[i] = (int) Trenddata.graphieprd[Trenddata.trendz][i];
+                    }
+                    graphy = graph;
+                }
+                break;
+            default:
+                break;
+
         }
 
     }
+
 
 }

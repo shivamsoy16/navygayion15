@@ -7,14 +7,62 @@
     android:layout_height="wrap_content"
     tools:context=".fragment.TrendFragment"
     android:tag="trendfragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <com.su.periodictable.trend
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        app:trendtext = "Size"
-        app:trendgrp = "Group"
-        app:trendprd = "Period"
-        app:tx = "1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Size"
+            android:textSize="32sp"
+            android:textAlignment="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Group"
+                android:layout_marginLeft="25sp"
+                android:id="@+id/size_grp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Period"
+                android:layout_marginLeft="25sp"
+                android:id="@+id/size_prd"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ionization Enthalpy"
+            android:textSize="32sp"
+            android:textAlignment="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Group"
+                android:layout_marginLeft="25sp"
+                android:id="@+id/ie_grp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Period"
+                android:layout_marginLeft="25sp"
+                android:id="@+id/ie_prd"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 </FrameLayout>

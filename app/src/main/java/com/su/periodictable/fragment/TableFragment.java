@@ -55,6 +55,7 @@ public class TableFragment extends Fragment implements View.OnClickListener {
     }
 
     public void otab1(View v) {
+        int i=0;
         ((customtext) v.findViewById(R.id.cut_1)).setOnClickListener(this);
         ((customtext) v.findViewById(R.id.cut_2)).setOnClickListener(this);
         ((customtext) v.findViewById(R.id.cut_3)).setOnClickListener(this);

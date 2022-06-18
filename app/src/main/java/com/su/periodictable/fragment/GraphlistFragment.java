@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
-import com.su.periodictable.Elements;
+import com.su.periodictable.Trenddata;
 import com.su.periodictable.GraphActivity;
 import com.su.periodictable.R;
 
@@ -98,7 +98,7 @@ public class GraphlistFragment extends Fragment implements View.OnClickListener 
         View view = inflater.inflate(R.layout.fragment_graphlist, container, false);
         graphlisthead = view.findViewById(R.id.graphlisthead);
         TableLayout tl = (TableLayout) view.findViewById(R.id.table_n1);
-        if (Elements.trendy == 1) {
+        if (Trenddata.trendy == 1) {
             graphlisthead.setText("Group wise Trends");
             for (int i = 0; i < grp.length; i++) {
                 // Make TR
@@ -121,7 +121,7 @@ public class GraphlistFragment extends Fragment implements View.OnClickListener 
 
                 tl.addView(tr, new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.WRAP_CONTENT));
             }
-        } else if (Elements.trendy == 2) {
+        } else if (Trenddata.trendy == 2) {
             graphlisthead.setText("Period wise Trends");
             for (int i = 0; i < prd.length; i++) {
                 // Make TR
@@ -154,8 +154,8 @@ public class GraphlistFragment extends Fragment implements View.OnClickListener 
     public void onClick(View view) {
         int goo = view.getId();
         int got = goo - 2142;
-        Elements.trendz = got;
-        Toast.makeText(getActivity(), "Clicked on Button:- " + goo + " Atm no " + Elements.trendz, Toast.LENGTH_SHORT).show();
+        Trenddata.trendz = got;
+        Toast.makeText(getActivity(), "Clicked on Button:- " + goo + " Atm no " + Trenddata.trendz, Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(getActivity(), GraphActivity.class);
         startActivity(intent);
     }

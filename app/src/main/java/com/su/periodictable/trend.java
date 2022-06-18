@@ -38,10 +38,8 @@ public class trend extends FrameLayout {
         setTrendgrp(attributes.getString(R.styleable.trendattrs_trendgrp));
         setTrendprd(attributes.getString(R.styleable.trendattrs_trendprd));
         ttext = attributes.getString(R.styleable.trendattrs_trendtext);
-/*
         tx = attributes.getInt(R.styleable.trendattrs_tx, 0);
-*/
-        Elements.trendx = ttext;
+        Trenddata.trendx = tx;
         init();
     }
 
@@ -62,7 +60,7 @@ public class trend extends FrameLayout {
         trendgrp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Elements.trendy = 1;
+                Trenddata.trendy = 1;
                 GraphlistFragment nextFrag = new GraphlistFragment();
                 FragmentManager fragmentManager;
                 FragmentTransaction fragmentTransaction;
@@ -72,13 +70,13 @@ public class trend extends FrameLayout {
 
                 fragmentTransaction.replace(R.id.fragment_container, nextFrag).addToBackStack(null);
                 fragmentTransaction.commit();
-                Toast.makeText(getContext(), "Clicked on Button:- trendgrp of " + ttext + "and no:" + Elements.trendx + " and " + Elements.trendy, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Clicked on Button:- trendgrp of " + ttext + "and no:" + Trenddata.trendx + " and " + Trenddata.trendy, Toast.LENGTH_SHORT).show();
             }
         });
         trendprd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Elements.trendy = 2;
+                Trenddata.trendy = 2;
                 GraphlistFragment nextFrag = new GraphlistFragment();
                 FragmentManager fragmentManager;
                 FragmentTransaction fragmentTransaction;
@@ -88,7 +86,7 @@ public class trend extends FrameLayout {
 
                 fragmentTransaction.replace(R.id.fragment_container, nextFrag).addToBackStack(null);
                 fragmentTransaction.commit();
-                Toast.makeText(getContext(), "Clicked on Button:- trendprd  of  " + ttext + "and no:" + Elements.trendx + " and " + Elements.trendy, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Clicked on Button:- trendprd  of  " + ttext + "and no:" + Trenddata.trendx + " and " + Trenddata.trendy, Toast.LENGTH_SHORT).show();
             }
         });
 

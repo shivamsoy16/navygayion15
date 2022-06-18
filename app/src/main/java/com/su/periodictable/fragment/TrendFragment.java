@@ -1,13 +1,21 @@
 package com.su.periodictable.fragment;
 
 import android.os.Bundle;
+import android.sax.Element;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 
 import com.su.periodictable.R;
+import com.su.periodictable.Trenddata;
 
 
 /**
@@ -15,7 +23,7 @@ import com.su.periodictable.R;
  * Use the {@link TrendFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class TrendFragment extends Fragment {
+public class TrendFragment extends Fragment implements View.OnClickListener {
 
 
     // TODO: Rename parameter arguments, choose names that match
@@ -67,10 +75,66 @@ public class TrendFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_trend, container, false);
 
+        /** setting button ids for group size, period, ie group, size **/
+        Button size_grp = (Button) view.findViewById(R.id.size_grp);
+        size_grp.setOnClickListener(this);
+        Button size_prd = (Button) view.findViewById(R.id.size_prd);
+        size_prd.setOnClickListener(this);
+        Button ie_grp = (Button) view.findViewById(R.id.ie_grp);
+        ie_grp.setOnClickListener(this);
+        Button ie_prd = (Button) view.findViewById(R.id.ie_prd);
+        ie_prd.setOnClickListener(this);
+
 
         return view;
 
     }
 
 
+    @Override
+    public void onClick(View view) {
+
+        int size=0;
+        switch (view.getId()) {
+            case R.id.size_grp:
+                /** trendx being 1=size, 2=inonization enthalpy
+                 * trendy being 1=group, 2= period
+                 */
+                Trenddata.trendx=1;
+                Trenddata.trendy=1;
+                Toast.makeText(getContext(), "Trendx"+Trenddata.trendx, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Trendy"+Trenddata.trendy, Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.size_prd:
+                Trenddata.trendx=1;
+                Trenddata.trendy=2;
+                Toast.makeText(getContext(), "Trendx"+Trenddata.trendx, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Trendy"+Trenddata.trendy, Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.ie_grp:
+                Trenddata.trendx=2;
+                Trenddata.trendy=1;
+                Toast.makeText(getContext(), "Trendx"+Trenddata.trendx, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Trendy"+Trenddata.trendy, Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.ie_prd:
+                Trenddata.trendx=2;
+                Trenddata.trendy=2;
+                Toast.makeText(getContext(), "Trendx"+Trenddata.trendx, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Trendy"+Trenddata.trendy, Toast.LENGTH_SHORT).show();
+                break;
+            default:
+                break;
+        }
+        GraphlistFragment nextFrag = new GraphlistFragment();
+        FragmentManager fragmentManager;
+        FragmentTransaction fragmentTransaction;
+
+        fragmentManager = ((AppCompatActivity) getContext()).getSupportFragmentManager();
+        fragmentTransaction = fragmentManager.beginTransaction();
+
+        fragmentTransaction.replace(R.id.fragment_container, nextFrag).addToBackStack(null);
+        fragmentTransaction.commit();
+
+    }
 }
