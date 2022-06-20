@@ -9,7 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/graphlisthead"
-        android:textColor="@color/black"
         android:fontFamily="@font/merri"
         android:textSize="24sp"
         android:text="Trend wise"

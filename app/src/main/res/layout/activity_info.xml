@@ -18,7 +18,7 @@
         android:gravity="center_vertical"
         android:text="Atomic Number"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,7 +75,7 @@
                         android:layout_gravity="center_horizontal"
                         android:fontFamily="@font/merri"
                         android:text="Overview"
-                        android:textColor="@color/black"
+                        android:textColor="@color/infoactivitytextcolor"
                         android:textSize="21sp" />
 
                 </TableRow>
@@ -94,10 +94,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                              
+
                             android:text="Atomic Number"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            
+                            android:textSize="18sp"
+                            android:id="@+id/number1"/>
 
                         <TextView
                             android:id="@+id/number"
@@ -105,7 +106,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="Number"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -124,10 +124,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                              
+
                             android:text="Symbol"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="18sp"
+                            android:id="@+id/symbol1" />
 
                         <TextView
                             android:id="@+id/symbol"
@@ -135,7 +135,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="Symbol"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -145,7 +144,7 @@
 
                 <TableRow
                     android:paddingTop="10sp"
-                    android:paddingBottom="10sp">>
+                    android:paddingBottom="10sp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -156,10 +155,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                              
+
                             android:text="Element's Name"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="18sp"
+                            android:id="@+id/name1"/>
 
                         <TextView
                             android:id="@+id/name"
@@ -167,7 +166,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="Name"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -188,9 +186,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                              
+                            android:id="@+id/mass1"
                             android:text="Mass"
-                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
                         <TextView
@@ -199,7 +196,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="--------"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -220,9 +216,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                              
+                            android:id="@+id/valence1"
                             android:text="Valence"
-                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
                         <TextView
@@ -231,7 +226,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="--------"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -252,9 +246,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                              
+                            android:id="@+id/discovered1"
                             android:text="Discovered in"
-                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
                         <TextView
@@ -263,7 +256,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="--------"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -283,9 +275,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                              
+                            android:id="@+id/state1"
                             android:text="State"
-                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
                         <TextView
@@ -294,7 +285,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="--------"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -312,7 +302,7 @@
                         android:layout_gravity="center_horizontal"
                         android:textSize="24sp"
                         android:fontFamily="@font/merri"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/infoactivitytextcolor"/>
 
                 </TableRow>
                 <TableRow
@@ -328,9 +318,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                              
+                            android:id="@+id/melting1"
                             android:text="Melting Point (in deg. Celsius)"
-                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
                         <TextView
@@ -339,7 +328,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="--------="
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -359,9 +347,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                              
+                            android:id="@+id/boiling1"
                             android:text="Boiling Point (in deg. Celsius)"
-                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
                         <TextView
@@ -370,7 +357,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="--------"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -390,9 +376,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                              
+                            android:id="@+id/conductivity1"
                             android:text="Conductivity"
-                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
                         <TextView
@@ -401,7 +386,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="--------"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -421,9 +405,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                              
+                            android:id="@+id/hardness1"
                             android:text="Hardness"
-                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
                         <TextView
@@ -432,13 +415,12 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="--------"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>
 
                 </TableRow>
-                
+
                 <TableRow
                     android:paddingTop="10sp"
                     android:paddingBottom="10sp">>
@@ -452,9 +434,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                              
+                            android:id="@+id/modulus1"
                             android:text="Modulus"
-                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
                         <TextView
@@ -463,7 +444,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="--------"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -481,7 +461,7 @@
                         android:layout_gravity="center_horizontal"
                         android:textSize="24sp"
                         android:fontFamily="@font/merri"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/infoactivitytextcolor"/>
 
                 </TableRow>
                 <TableLayout>
@@ -501,8 +481,8 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="Electron"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="18sp"
+                            android:id="@+id/electron1"/>
 
                         <TextView
                             android:id="@+id/electron"
@@ -510,7 +490,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="--"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -525,7 +504,8 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="Proton"
-                            android:textColor="@color/black"
+                            android:id="@+id/proton1"
+
                             android:textSize="18sp" />
 
                         <TextView
@@ -534,7 +514,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="--"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -548,7 +527,8 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="Neutron"
-                            android:textColor="@color/black"
+                            android:id="@+id/neutron1"
+
                             android:textSize="18sp" />
 
                         <TextView
@@ -557,7 +537,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="--"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -577,9 +556,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
+                            android:id="@+id/config1"
 
                             android:text="Electronic Configuration"
-                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
                         <TextView
@@ -588,7 +567,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="--------"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -606,9 +584,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                              
+                            android:id="@+id/heat1"
+
                             android:text="Heat"
-                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
                         <TextView
@@ -617,7 +595,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="--------"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -637,9 +614,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                              
+                            android:id="@+id/density1"
+
                             android:text="Density"
-                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
                         <TextView
@@ -648,7 +625,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="--------"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -668,9 +644,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                              
+                            android:id="@+id/radius1"
+
                             android:text="Atomic Radius"
-                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
                         <TextView
@@ -679,7 +655,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="--------"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -699,9 +674,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                              
+                            android:id="@+id/ionization1"
+
                             android:text="Ionization"
-                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
                         <TextView
@@ -710,7 +685,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="--------"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -730,9 +704,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                              
+                            android:id="@+id/electronegativity1"
+
                             android:text="Electron Negativity"
-                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
                         <TextView
@@ -741,7 +715,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="--------"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -761,9 +734,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
-                              
+                            android:id="@+id/electroaffinity1"
+
                             android:text="Electron Affinity"
-                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
                         <TextView
@@ -772,7 +745,6 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/merri"
                             android:text="--------"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </LinearLayout>

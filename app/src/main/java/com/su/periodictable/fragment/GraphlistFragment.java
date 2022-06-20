@@ -111,7 +111,6 @@ public class GraphlistFragment extends Fragment implements View.OnClickListener 
                 // Make TV to hold the details
                 TextView tv = new TextView(getActivity());
                 tv.setText(grp[i]);
-                tv.setTextColor(Color.BLACK);
                 tv.setPadding(10, 10, 10, 10);
                 tv.setTextSize(18);
                 tv.setTypeface(face);
@@ -134,7 +133,6 @@ public class GraphlistFragment extends Fragment implements View.OnClickListener 
                 // Make TV to hold the details
                 TextView tv = new TextView(getActivity());
                 tv.setText(prd[i]);
-                tv.setTextColor(Color.BLACK);
                 tv.setPadding(10, 10, 10, 10);
                 tv.setTextSize(18);
                 tv.setGravity(Gravity.CENTER);

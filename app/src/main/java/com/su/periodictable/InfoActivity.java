@@ -1,6 +1,8 @@
 package com.su.periodictable;
 
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -17,7 +19,7 @@ public class InfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
-
+        String str = "#ffffff" ;
         ImageView bar_logo = findViewById(R.id.bar_logo);
         TextView bar_tittle = findViewById(R.id.bar_tittle);
         ImageView bar_search = findViewById(R.id.search_bar);
@@ -26,6 +28,7 @@ public class InfoActivity extends AppCompatActivity {
         String[] urls = Elements.getUrls();
         int igi = 0;
         igi = (int) Elements.getCos();
+
 
         int finalIgi = igi - 1;
         wiki.setOnClickListener(new View.OnClickListener() {
@@ -52,8 +55,8 @@ public class InfoActivity extends AppCompatActivity {
         bar_tittle.setText("Elements' Info");
 
         String ig3 = String.valueOf(igi);
-        TextView ssd = findViewById(R.id.textView);
-        TextView ssid = (TextView) findViewById(R.id.number);
+        TextView ssid0 = findViewById(R.id.textView);
+        TextView ssid1 = (TextView) findViewById(R.id.number);
         TextView ssid2 = (TextView) findViewById(R.id.symbol);
         TextView ssid3 = (TextView) findViewById(R.id.name);
         TextView ssid4 = (TextView) findViewById(R.id.mass);
@@ -77,11 +80,13 @@ public class InfoActivity extends AppCompatActivity {
         TextView ssid22 = (TextView) findViewById(R.id.config);
 
 
+
+
         int value = igi - 1;
         /*ssid.setText(ig3);
         ssid2.setText(ele[value][1]);*/
-        ssd.setText(Elements.subjects[value][2]);
-        ssid.setText(ig3);
+        ssid0.setText(Elements.subjects[value][2]);
+        ssid1.setText(ig3);
         ssid2.setText(Elements.subjects[value][1]);
         ssid3.setText(Elements.subjects[value][2]);
         ssid4.setText(Elements.subjects[value][3]);
@@ -103,7 +108,6 @@ public class InfoActivity extends AppCompatActivity {
         ssid20.setText(Elements.config[value][1]);
         ssid21.setText(Elements.config[value][2]);
         ssid22.setText(Elements.config[value][3]);
-
 
     }
 }

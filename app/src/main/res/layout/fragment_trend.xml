@@ -26,8 +26,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Group"
-                android:layout_marginLeft="25sp"
-                android:id="@+id/size_grp"/>
+                android:layout_marginLeft="115sp"
+                android:id="@+id/size_grp" />
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Group"
-                android:layout_marginLeft="25sp"
+                android:layout_marginLeft="115sp"
                 android:id="@+id/ie_grp"/>
             <Button
                 android:layout_width="wrap_content"

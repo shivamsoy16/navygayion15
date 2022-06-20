@@ -5,14 +5,39 @@ public class Trenddata {
     public static int trendy = 0;
     public static int trendz = 0;
 
-    public static String[][] elementprd = {
-            {"Hydrogen","Helium"},
-            {"Lithium","Beryllium","Boron","Carbon","Nitrogen","Oxygen","Fluorine","Neon"},
-            {"Sodium","Magnesium","Aluminium","Silicon","Phosphorus","Sulfur","Chlorine","Argon"},
-            {"Potassium","Calcium","Scandium","Titanium","Vanadium","Chromium","Manganese","Iron"}
 
-
+    public static String[][] trendelementprd = {
+            {"H","He"},
+            {"Li","Be","B","C","N","O","F","Ne"},
+            {"Na","Mg","Al","Si","P","S","Cl","Ar",},
+            {"K","Ca","Sc","Ti","V","Cr","Mn","Fe","Co","Ni","Cu","Zn","Ga","Ge", "As","Se","Br","Kr"},
+            {"Rb","Sr","Y","Zr","Nb","Mo","Tc","Ru","Rh","Pd","Ag","Cd","In","Sn", "Sb","Te","I","Xe"},
+            {"Cs","Ba","_","Hf","Ta","W","Re","Os","Ir","Pt","Au","Hg","Tl","Pb","Bi","Po","At","Rn"},
+            {"Fr","Ra","_","Rf","Db","Sg","Bh","Hs","Mt","Ds","Rg","Cn","Nh", "Fl","Mc","Lv","Ts","Og"},
+            {"La","Ce","Pr","Nd","Pm","Sm"," Eu","Gd","Tb","Dy","Ho","Er","Tm","Yb","Lu"},
+            {"Ac","Th","Pa","U","Np","Pu","Am","Cm","Bk","Cf","Es","Fm","Md","No","Lr"}
     };
+
+        public static  String[][] trendelementgrp= {
+                {"H","Li","Na","K","Rb","Cs","Fr"},
+                {"Be","Mg","Ca","Sr","Ba","Ra"},
+                {"Sc","Y","La","Ac"},
+                {"Ti","Zr","Hf","Rf","Ce","Th"},
+                {"V","Nb","Ta","Db","Pr","Pa"},
+                {"Cr","Mo","W","Sg","Nd","U"},
+                {"Mn","Tc","Re","Bh","Pm","Np"},
+                {"Fe","Ru","Os","Hs","Sm","Pu"},
+                {"Co","Rh","Ir","Mt","Eu","Am"},
+                {"Ni","Pd","Pt","Ds","Gd","Cm"},
+                {"Cu","Ag","Au","Rg","Tb","Bk"},
+                {"Zn","Cd","Hg","Cn","Dy","Cf"},
+                {"B", "Al", "Ga", "In", "Tl","Nh","Ho","Es"},
+                {"C", "Si", "Ge", "Sn", "Pb", "Fl", "Er", "Fm"},
+                {"N", "P", "As", "Sb", "Bi", "Mc", "Tm", "Md"},
+                {"O", "S", "Se", "Te", "Po", "Lv", "Yb", " No"},
+                {"F", "Cl", "Br", "I", "At", "Ts", "Lu", "Lr"},
+                {"He", "Ne", "Ar", "Kr", "Xe", "Rn", "Og"}
+            };
 
     public static int[][] graphSizeprd = {
             {53, 31},
